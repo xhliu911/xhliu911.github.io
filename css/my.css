@@ -1,0 +1,102 @@
+/* Custom styles for QinLog */
+:root {
+  --font-primary: 'Source Han Serif SC', 'Noto Serif SC', 'Songti SC', 'SimSun', 'FangSong', serif;
+  --font-accent: 'FangSong', 'STFangsong', 'SimSun', serif;
+}
+
+.bg-cover.about-cover {
+  background-image: url("/images/main_cover.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-cover .title,
+.bg-cover .description {
+  color: #111 !important;
+  font-family: var(--font-primary);
+}
+
+#subtitle {
+  color: #111 !important;
+  font-family: var(--font-primary);
+}
+
+.bg-cover:before,
+.bg-cover:after {
+  background: transparent !important;
+  animation: none !important;
+}
+
+main.content.tags-page {
+  background-color: #ffe6ef;
+  min-height: 100vh;
+}
+
+.bg-color {
+  background-image: none !important;
+  background-color: #ffd9e6 !important;
+}
+
+.text-color {
+  color: #d26a94 !important;
+}
+
+.progress-bar {
+  background: linear-gradient(to right, #ffe1ed 0%, #ffc9e1 100%) !important;
+}
+
+.brand-logo .logo-span,
+.brand-logo .logo-img + .logo-span,
+.logo-span {
+  color: #111 !important;
+  font-family: var(--font-primary);
+}
+
+.nav-menu > li > a,
+.nav-menu > li > a span {
+  color: #111 !important;
+  font-family: var(--font-primary);
+}
+
+.nav-menu > li > a i,
+.nav-menu li .sub-nav li a i,
+header .side-nav .menu-list a i,
+.mobile-menu-list a i,
+.page-footer i {
+  color: #111 !important;
+}
+
+.nav-menu li .sub-nav li a,
+.nav-menu li .sub-nav li a span {
+  color: #111 !important;
+  font-family: var(--font-primary);
+}
+
+#searchIcon,
+#sum-moon-icon,
+.sidenav-trigger i {
+  color: #111 !important;
+}
+
+header .side-nav .menu-list a,
+.mobile-menu-list a,
+.mobile-menu-list a span {
+  color: #111 !important;
+  font-family: var(--font-primary);
+}
+
+.page-footer,
+.page-footer .copy-right,
+.page-footer .copy-right a,
+.page-footer a,
+.page-footer .white-color,
+.page-footer span {
+  color: #111 !important;
+  font-family: var(--font-primary);
+}
+
+blockquote,
+.motto-text {
+  font-family: var(--font-accent);
+}
