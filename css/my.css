@@ -100,3 +100,506 @@ blockquote,
 .motto-text {
   font-family: var(--font-accent);
 }
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: #c8467d;
+  margin-bottom: 0.6rem;
+  display: inline-block;
+}
+
+.info-hero {
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.info-hero .hero-title {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+  font-family: var(--font-primary);
+}
+
+.info-hero .hero-quote {
+  margin: 1rem 0;
+  font-family: var(--font-accent);
+  font-size: 1rem;
+  color: #555;
+}
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.info-chip {
+  background-color: #ffe1ed;
+  color: #c8467d;
+  border-radius: 999px;
+  padding: 0.2rem 0.8rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.hero-photo img {
+  max-width: 220px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.section-divider {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffb6d9, #ff7daf);
+  margin: 2.5rem auto;
+  border-radius: 999px;
+}
+
+.info-highlight-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.info-highlight-grid .col {
+  display: flex;
+  padding: 0 12px 24px;
+}
+
+.info-highlight-grid .card {
+  flex: 1;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  padding: 0;
+}
+
+.info-highlight-grid .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.info-card .card-content {
+  padding: 1.2rem 1.5rem;
+}
+
+.info-card .plain-list {
+  margin: 0.3rem 0 0;
+}
+
+.info-highlight-grid .info-meta {
+  margin: 0 0 0.4rem;
+  color: #555;
+}
+
+.ability-radar-card {
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(255, 125, 175, 0.2);
+  margin-bottom: 2rem;
+}
+
+.ability-radar-header .card-title {
+  font-size: 1.6rem;
+  font-family: var(--font-primary);
+}
+
+#ability-radar {
+  width: 100%;
+  height: 360px;
+}
+
+.ability-grid .card {
+  border-radius: 14px;
+  height: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.ability-grid .ability-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.ability-grid ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Education cards */
+.edu-card-grid .col,
+.edu-detail-grid .col {
+  display: flex;
+}
+
+.edu-card-grid .edu-card,
+.edu-detail-grid .edu-detail-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.edu-card-main {
+  flex: 1;
+}
+
+.edu-card-tags {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 0.5rem;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.edu-card-tags .pill-badge {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.edu-card h5 {
+  margin: 0.4rem 0 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.edu-card .edu-school {
+  margin-bottom: 0.6rem;
+}
+
+.section-subtitle {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.pill-badge {
+  display: inline-block;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  background: #ffe1ed;
+  color: #c8467d;
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+}
+
+.edu-timeline {
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.edu-timeline .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.edu-timeline-track {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 2.75rem;
+}
+
+.edu-timeline-track::before {
+  content: "";
+  position: absolute;
+  left: 1.2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #ffd9e6, #ff7daf);
+}
+
+.edu-timeline-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  column-gap: 1rem;
+  padding-bottom: 1.8rem;
+}
+
+.edu-timeline-entry:last-child {
+  padding-bottom: 0;
+}
+
+.edu-timeline-node {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff7daf;
+  box-shadow: 0 0 0 4px rgba(255, 125, 175, 0.2);
+  align-self: flex-start;
+  justify-self: center;
+  margin-top: 0.35rem;
+}
+
+.edu-timeline-body {
+  margin: 0;
+}
+
+.edu-timeline-body h5 {
+  margin: 0.3rem 0 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.edu-timeline-body p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.timeline-card {
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 1.2rem;
+  padding-left: 1.5rem;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 0.3rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #ffd9e6, #ff7daf);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.45rem;
+  top: 0.2rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff7daf;
+  box-shadow: 0 0 0 4px rgba(255, 125, 175, 0.2);
+}
+
+.timeline-content h6,
+.timeline-content h5 {
+  margin-top: 0;
+}
+
+.timeline-lead {
+  font-weight: 600;
+  color: #555;
+}
+
+.stacked-card {
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.stacked-card .stack-item + .stack-item {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed rgba(0, 0, 0, 0.08);
+}
+
+.leadership-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.highlight-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+
+.plain-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.plain-list li {
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+.flat-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.flat-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.7;
+}
+
+
+.timeline {
+  position: relative;
+  margin-left: 1.2rem;
+  padding-left: 1.5rem;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 0.3rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #ffd9e6, #ff7daf);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.45rem;
+  top: 0.2rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff7daf;
+  box-shadow: 0 0 0 4px rgba(255, 125, 175, 0.2);
+}
+
+.timeline-content h6,
+.timeline-content h5 {
+  margin-top: 0;
+}
+
+.timeline-card {
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.timeline-lead {
+  font-weight: 600;
+  color: #555;
+}
+
+
+
+.stacked-card {
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.stacked-card .stack-item + .stack-item {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed rgba(0, 0, 0, 0.08);
+}
+
+.leadership-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.highlight-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+
+.summary-card {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.summary-points li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+.portfolio-intro {
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-tags {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.portfolio-tags .tag-chips {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-tags #tag-wordcloud {
+  margin-top: 1.5rem;
+}
+
+.timeline-card .chip,
+.internship-card .chip,
+.other-exp-grid .chip,
+.edu-card .chip,
+.edu-timeline-entry .chip,
+.leadership-card .chip {
+  background: #ffe1ed;
+  color: #c8467d;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+}
+
+.metric-card {
+  background: #fff5fa;
+  border-radius: 14px;
+  padding: 1rem 0.5rem;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 5px 15px rgba(255, 125, 175, 0.15);
+}
+
+.metric-card h5 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #c8467d;
+}
+
+.internship-stack .internship-card,
+.other-exp-grid .internship-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.internship-card .chip, .timeline-card .chip {
+  background-color: #ffe1ed;
+  color: #c8467d;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.internship-card h5 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.internship-card ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
