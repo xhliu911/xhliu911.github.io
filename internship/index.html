@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="实习经历, 刘潇鸿,个人简历,数据故事,新闻理想">
-    <meta name="description" content="刘潇鸿的个人简历与作品集，聚焦全媒体采编、数据新闻与内容创意。">
+    <meta name="description" content="刘潇鸿的个人网站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,11 +21,26 @@
     <link rel="icon" type="image/jpeg" href="/images/avatar.jpg">
     
     <style>
+        :root {
+            --cover-image: url('/images/cover/new_l.jpg');
+        }
         body{
-            background-image: url(/images/cover/00.jpg);
-            background-repeat:no-repeat;
-            background-size: 100% 100%;
-            background-attachment:fixed;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/cover/new_l.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.18;
+            z-index: -1;
         }
     </style>
 
@@ -82,17 +97,6 @@
     <a href="/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/info" class="waves-effect waves-light">
-      
-      <i class="fas fa-book" style="zoom: 0.6;"></i>
       
       <span>基本信息</span>
     </a>
@@ -155,7 +159,7 @@
         <div class="logo-name">刘潇鸿的个人网站</div>
         <div class="logo-desc">
             
-            刘潇鸿的个人简历与作品集，聚焦全媒体采编、数据新闻与内容创意。
+            Never really desperate, only the lost of the soul.
             
         </div>
     </div>
@@ -167,17 +171,6 @@
 		<a href="/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/info" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-book"></i>
 			
 			基本信息
 		</a>
@@ -244,13 +237,11 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/xhliu911/imagebed/raw/master/img/cover_02.jpg')">
+<div class="bg-cover pd-header post-cover post-cover-bg" style="--post-cover: url('/images/cover/new_l.jpg');">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">实习经历</h1>
-                </div>
+                <div class="brand"></div>
             </div>
         </div>
     </div>
@@ -261,12 +252,11 @@
 
 <main class="container content">
 
-    
     <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
+        <div class="card-content article-info" style="display: none;">
+            <div class="row tag-cate" style="display: none;">
                 <div class="col s7">
                     
                           <div class="article-tag">
@@ -283,7 +273,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2025-11-10
+                    2025-11-22
                 </div>
                 
 
@@ -303,31 +293,34 @@
         
 
         <div class="card-content article-card-content">
+            <h1 class="post-content-title">实习经历</h1>
+            
             <div id="articleContent">
-                <h2 id="实习概览"><a href="#实习概览" class="headerlink" title="实习概览"></a>实习概览</h2><div class="card summary-card">
+                <h2 id="实习概览"><a href="#实习概览" class="headerlink" title="实习概览"></a>实习概览</h2><p class="eyebrow">Internship Overview</p>
+
+<div class="card summary-card">
   <div class="card-content">
     <div class="row">
-      <div class="col s12 m8">
-        <p class="eyebrow">Highlights</p>
-        <h4>在真实场景中验证采编、数据与影像能力</h4>
-        <ul class="summary-points">
-          <li>人民日报、央视新闻、南京日报、荔枝新闻等主流媒体的多岗位历练，形成采编+评论+视频+数据的闭环。</li>
-          <li>在企业与平台项目中搭建流程、撰写规范、组织培训，熟悉跨部门协作与产品思维。</li>
-          <li>多篇作品阅读量 50w+，可将选题从线索验证到传播转化，完成“内容→影响力”的闭环。</li>
-        </ul>
+      <div class="col s12 m9">
+        <h4>通过垂类实习锤炼新闻采编、数据与影像能力</h4>
+          <ul class="summary-points">
+            <li>经历涵盖从县级融媒体到中央媒体的多层级新闻机构，对新闻行业有初步认知。</li>
+            <li>也曾在影视公司与快消企业从事内容运营与项目执行，具备跨行业视野与品牌传播经验。</li>
+            <li>策划与撰写多篇稿件，累计阅读量超 100 万+，可独立完成从选题线索挖掘与写作。</li>
+          </ul>
       </div>
-      <div class="col s12 m4 center-align">
+      <div class="col s12 m3 center-align">
         <div class="metric-card">
-          <h5>50w+</h5>
-          <p>单篇稿件阅读量</p>
+          <h5>100 万+</h5>
+          <p>累计稿件阅读量</p>
         </div>
         <div class="metric-card">
           <h5>120+</h5>
-          <p>审核/发布稿件数</p>
+          <p>审核 / 发布稿件</p>
         </div>
         <div class="metric-card">
-          <h5>12.1w</h5>
-          <p>短视频最高播放</p>
+          <h5>12.1 万</h5>
+          <p>短视频单条最高播放</p>
         </div>
       </div>
     </div>
@@ -342,11 +335,11 @@
         <div class="timeline-content">
           <span class="chip">2025.06－2025.09</span>
           <h5>人民日报社（政治文化部）｜记者</h5>
-          <p class="timeline-lead">以监督报道与人文选题为核心，兼顾栏目运营。</p>
+          <p class="timeline-lead">以监督报道与人文选题为核心，兼顾栏目运营与行政支持。</p>
           <ul>
-            <li><strong>头条选题：</strong>参与《小区违建治理咋这么难》《谁解除了孩子的未成年人模式》等系列报道，完成 9 名维权者深访及灰产暗访，单篇阅读量 28w+。</li>
-            <li><strong>栏目运营：</strong>独立排版发布“人民日报政文”40+ 篇文章，并协助全国党媒信息公共平台稿件 20+ 篇，保持节奏与风格统一。</li>
-            <li><strong>人文与活动报道：</strong>专访“合唱教母”吴灵芬、撰写文化评论《如何用文化IP激活当地文旅？》，累计曝光 257w；执行全国政协、最高法、中国文联等活动通讯 10+ 篇。</li>
+            <li><strong>新闻采写：</strong>「监督报道」参与《人民日报》07版“读者来信”头条采写，完成维权者采访及灰产暗访，推动话题讨论；独立采写 4 篇民生热点稿件，同步刊发报纸及客户端。「人文报道」专访“合唱教母”吴灵芬、撰写文艺评论，单篇全网曝光 257w。「活动报道」参加最高法、中国文联等政务及文化活动，在人民网和人民日报全国党媒信息公共平台发表通讯 10+ 篇，总浏览量 73w+。</li>
+            <li><strong>运营：</strong>累计排版“人民日报政文”微信公众号文章 30+ 篇、“人民日报全国党媒信息公共平台”文章 20+ 篇。</li>
+            <li><strong>行政：</strong>承担部门基础行政工作，包括每日取送报纸与信件并准确分发；协助版面打样、校对和材料送取等日常事务。</li>
           </ul>
         </div>
       </div>
@@ -355,11 +348,11 @@
         <div class="timeline-content">
           <span class="chip">2025.02－2025.06</span>
           <h5>中央广播电视总台（央视新闻）｜记者 / 编辑</h5>
-          <p class="timeline-lead">以“提振消费”与教育观察为切入口，兼顾数据稿件与栏目写作。</p>
+          <p class="timeline-lead">围绕时政、消费与教育议题进行调研采写，兼顾评论与新媒体运营。</p>
           <ul>
-            <li><strong>深度稿件：</strong>策划“提振消费”系列，《今天的菜市场，不止有菜》《“即买即退”，境外游客爱买什么？》发布 50w+ 阅读。</li>
-            <li><strong>数据叙事：</strong>完成《“数”说高校专业调整，未来风口专业是哪些？》，被多省教育厅引用；撰写生态稿《一潭净水如何“游”出绿色财富？》。</li>
-            <li><strong>评论与运营：</strong>参与《主播说联播》写作，发布 7 篇短评（15w+ 阅读），并协助“新闻联播”公众号快讯编辑与节目切条。</li>
+            <li><strong>调研采写：</strong>围绕提振消费、经济大省挑大梁、全国两会“部长通道”等时政议题调研并采写，独立完成时政特稿 3 篇发布于“央视新闻”公众号；结合教育部最新文件，独立完成数据新闻 1 篇，浏览 20w+，被多省教育厅转发。</li>
+            <li><strong>评论撰写：</strong>参与《主播说联播》写稿与节目录制，围绕体育教改、清朗行动、一号文件、平安中国等议题撰写短评，以编辑身份发表 7 篇，总阅读 15w+。</li>
+            <li><strong>新媒体运营：</strong>协助运营“新闻联播”公众号，负责重要时政快讯的编辑与发布；参与《新闻联播》节目的视频切条、剪辑与推送。</li>
           </ul>
         </div>
       </div>
@@ -368,11 +361,10 @@
         <div class="timeline-content">
           <span class="chip">2024.09－2024.12</span>
           <h5>南京日报（理论评论部）｜评论员 / 编辑</h5>
-          <p class="timeline-lead">沉淀理论表达方式，训练图文+视频的多形态传播。</p>
+          <p class="timeline-lead">沉淀理论表达方式，提升评论稿的编辑与出镜表达。</p>
           <ul>
-            <li><strong>理论版面：</strong>参与“新思”“策论”等版面审读，确保政治表述准确、排版规范。</li>
-            <li><strong>评论产出：</strong>发表《低俗婚闹是对女性权利和尊严的漠视》《我们为什么要呼唤伴侣动物保护？》等 10+ 篇评论。</li>
-            <li><strong>多形态输出：</strong>策划录制视频评论，形成图文 + 短视频的组合传播方案。</li>
+            <li><strong>审稿编辑：</strong>参与每周“新思”“策论”理论版面的编校，审读党政类文章，确保政治表述准确、版面规范。</li>
+            <li><strong>评论出镜：</strong>在《南京日报》版面及客户端发表《低俗婚闹是对女性权利和尊严的漠视》《我们为什么要呼唤伴侣动物保护？》等 10+ 篇新闻时评；同步策划、出镜录制视频评论，实现观点的多形态传播。</li>
           </ul>
         </div>
       </div>
@@ -381,11 +373,11 @@
         <div class="timeline-content">
           <span class="chip">2024.01－2024.03</span>
           <h5>江苏广播电视总台（荔枝新闻中心）｜采编记者</h5>
-          <p class="timeline-lead">在快节奏现场锻炼选题响应、视频统筹与采访协调。</p>
+          <p class="timeline-lead">在快节奏现场锻炼选题响应、视频统筹与现场协调。</p>
           <ul>
-            <li><strong>热点响应：</strong>多渠道联系事件当事人，推动政府回应；协助策划张雪峰访谈方案。</li>
-            <li><strong>视频制作：</strong>撰写脚本并完成 8 条新闻短视频，单条最高播放量 12.1w；剪辑李斯丹妮人物视频，微博互动 1.3w+。</li>
-            <li><strong>现场统筹：</strong>参与江苏省少儿春晚直播及非遗纪录片拍摄，负责现场衔接与流程执行。</li>
+            <li><strong>内容采编：</strong>多渠道联系热点事件人物，促成政府回应；协助制定张雪峰访谈方案；完成星巴克新品推广等商业软文 2 篇。</li>
+            <li><strong>视频剪辑：</strong>撰写脚本并完成新闻短视频 8 条，单条最高阅读 12.1w；剪辑李斯丹妮人物视频，微博转赞评超 1.3w。</li>
+            <li><strong>现场协调：</strong>参与 2024 江苏省少儿春晚直播录制；协助非遗纪录片拍摄，负责流程沟通、执行与环节衔接。</li>
           </ul>
         </div>
       </div>
@@ -400,9 +392,10 @@
         <span class="chip">2021.07－2021.09</span>
         <h5>芒果TV（大会员中心）｜内容运营</h5>
         <ul>
-          <li>剪辑电视剧项目预热片与花絮，制定上线宣传素材及分发节奏。</li>
-          <li>参与剧本评估与上线审核，从剧情结构与商业潜力提出建议。</li>
-          <li>撰写运营方案、排播表与会员转化流程，并跟踪竞品输出日报/周报。</li>
+          <li>宣传策划：负责电视剧项目预热宣传片与花絮视频的剪辑与制作。</li>
+          <li>内容审核：参与平台剧本评估与审核，关注剧情完整性、人物塑造及商业化潜力。</li>
+          <li>方案撰写：协助撰写电视剧项目运营方案，挖掘营销热点及品牌植入点，制作排播表与会员转化流程图。</li>
+          <li>行业洞察：监测友商剧影综的播出表现与付费转化，整理成日报/周报。</li>
         </ul>
       </div>
     </div>
@@ -411,11 +404,12 @@
     <div class="card internship-card">
       <div class="card-content">
         <span class="chip">2024.07－2024.09</span>
-        <h5>孩子王儿童用品股份有限公司（应用技术研发部）｜AI 运营</h5>
+        <h5>孩子王（应用技术研发部）｜AI 运营</h5>
         <ul>
-          <li>测试一键成片、矩阵投放、脚本生成等 AIGC 功能，编写操作手册并组织跨部门培训。</li>
-          <li>梳理《孩子王 AIGC 视频素材生产规范》《孩子王素材拍摄实操技巧》，提出门店短视频质控建议。</li>
-          <li>协助数字人项目拍摄，负责绿幕、灯光与口型校准支持，记录技术问题并撰写会议纪要。</li>
+          <li>AIGC 落地：作为技术部唯一运营实习生，测试一键成片、矩阵投放、脚本编写等功能，编写操作手册并参与跨部门培训。</li>
+          <li>文档撰写：独立撰写《孩子王 AIGC 视频素材生产规范》《孩子王素材拍摄实操技巧》，为一线门店视频质控提出改进建议。</li>
+          <li>数字人拍摄：协助推进数字人带货项目，参与虚拟主播拍摄测试，布置绿幕、灯光与口型校准，记录并反馈技术问题。</li>
+          <li>会议记录：参与多场 AIGC 项目跨部门会议，撰写并优化会议纪要规范，输出标准化记录与分析报告。</li>
         </ul>
       </div>
     </div>
@@ -430,15 +424,15 @@
 
 
 
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
+            <div class="tag_share" style="display: none;">
+                <div class="post-meta__tag-list" style="display: none;">
                     
                         <div class="article-tag">
                             <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                <div class="post_share" style="display: none;">
                     <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
@@ -473,7 +467,8 @@
 
     
 
-    
+    <div style="display: none;">
+        
 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
@@ -486,7 +481,8 @@
                 <a href="/internship/index.html">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/cover_02.jpg" class="responsive-img" alt="实习经历">
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="实习经历">
                         
                         <span class="card-title">实习经历</span>
                     </div>
@@ -499,7 +495,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-22
                             </span>
                         <span class="publish-author">
                             
@@ -523,7 +519,8 @@
                 <a href="/internship/index.html">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/cover_02.jpg" class="responsive-img" alt="实习经历">
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="实习经历">
                         
                         <span class="card-title">实习经历</span>
                     </div>
@@ -536,7 +533,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-22
                             </span>
                         <span class="publish-author">
                             
@@ -554,6 +551,7 @@
     </div>
 </article>
 
+    </div>
 </div>
 
 
@@ -573,7 +571,6 @@
 
 
 
-    
 
 </main>
 
@@ -605,6 +602,11 @@
             <!-- 运行天数提醒. -->
             
             <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025219138号-1</a>
+            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link ">

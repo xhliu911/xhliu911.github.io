@@ -8,6 +8,7 @@
     <meta name="description" content="
 原文链接：阅读原文 →
 
+发布平台：其他
 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -24,11 +25,26 @@
     <link rel="icon" type="image/jpeg" href="/images/avatar.jpg">
     
     <style>
+        :root {
+            --cover-image: url('/images/cover/new_l.jpg');
+        }
         body{
-            background-image: url(/images/cover/00.jpg);
-            background-repeat:no-repeat;
-            background-size: 100% 100%;
-            background-attachment:fixed;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/cover/new_l.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.18;
+            z-index: -1;
         }
     </style>
 
@@ -87,17 +103,6 @@
     <a href="/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/info" class="waves-effect waves-light">
-      
-      <i class="fas fa-book" style="zoom: 0.6;"></i>
       
       <span>基本信息</span>
     </a>
@@ -160,7 +165,7 @@
         <div class="logo-name">刘潇鸿的个人网站</div>
         <div class="logo-desc">
             
-            刘潇鸿的个人简历与作品集，聚焦全媒体采编、数据新闻与内容创意。
+            Never really desperate, only the lost of the soul.
             
         </div>
     </div>
@@ -172,17 +177,6 @@
 		<a href="/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/info" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-book"></i>
 			
 			基本信息
 		</a>
@@ -249,13 +243,11 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/xhliu911/imagebed/raw/master/img/tgsd_qt-01.png')">
+<div class="bg-cover pd-header post-cover post-cover-bg" style="--post-cover: url('/images/cover/new_l.jpg');">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">助浴、陪诊、宠托、改娃，这些90后为什么选择职业新赛道？</h1>
-                </div>
+                <div class="brand"></div>
             </div>
         </div>
     </div>
@@ -264,22 +256,19 @@
 
 
 
-<main class="post-container content">
+<main class="container content">
 
-    
-    <div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
+        <div class="card-content article-info" style="display: none;">
+            <div class="row tag-cate" style="display: none;">
                 <div class="col s7">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
-                                <span class="chip bg-color">深度报道</span>
+                            <a href="/tags/%E7%89%B9%E7%A8%BF-%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
+                                <span class="chip bg-color">特稿/深度报道</span>
                             </a>
                         
                     </div>
@@ -323,10 +312,17 @@
         
 
         <div class="card-content article-card-content">
+            <h1 class="post-content-title">助浴、陪诊、宠托、改娃，这些90后为什么选择职业新赛道？</h1>
+            
+            <div class="post-inline-cover">
+                <img src="/images/tgsd/qt-01.png" alt="助浴、陪诊、宠托、改娃，这些90后为什么选择职业新赛道？ 封面">
+            </div>
+            
             <div id="articleContent">
                 <blockquote>
 <p>原文链接：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzkxOTg1NzE2MA==&mid=2247488341&idx=1&sn=dcc39b4c9c20d96d585712c7d51baaee&source=41&poc_token=HLAQBmmjiS7EOStxkg5631FHBdQBEQf-M8-H-zZX">阅读原文 →</a></p>
 </blockquote>
+<p>发布平台：其他</p>
 
                 
             </div>
@@ -336,19 +332,19 @@
 
 
 
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
+            <div class="tag_share" style="display: none;">
+                <div class="post-meta__tag-list" style="display: none;">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
-                                    <span class="chip bg-color">深度报道</span>
+                                <a href="/tags/%E7%89%B9%E7%A8%BF-%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
+                                    <span class="chip bg-color">特稿/深度报道</span>
                                 </a>
                             
                         </div>
                     
                 </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                <div class="post_share" style="display: none;">
                     <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
@@ -383,7 +379,8 @@
 
     
 
-    
+    <div style="display: none;">
+        
 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
@@ -395,7 +392,7 @@
                 <a href="/works/wztx-rmrb-008/">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="村民站C位 百姓当主角">
+                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="村民站C位 百姓当主角">
                         
                         <span class="card-title">村民站C位 百姓当主角</span>
                     </div>
@@ -425,8 +422,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                        <span class="chip bg-color">人民日报</span>
+                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                        <span class="chip bg-color">文字通讯</span>
                     </a>
                     
                 </div>
@@ -443,7 +440,7 @@
                 <a href="/works/wztx-rmrb-010/">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="全国青少年美育示范展演独唱与合作演唱在浙江宁波唱响">
+                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="全国青少年美育示范展演独唱与合作演唱在浙江宁波唱响">
                         
                         <span class="card-title">全国青少年美育示范展演独唱与合作演唱在浙江宁波唱响</span>
                     </div>
@@ -473,8 +470,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                        <span class="chip bg-color">人民日报</span>
+                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                        <span class="chip bg-color">文字通讯</span>
                     </a>
                     
                 </div>
@@ -485,6 +482,7 @@
     </div>
 </article>
 
+    </div>
 </div>
 
 
@@ -504,88 +502,6 @@
 
 
 
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
-    
 
 </main>
 
@@ -617,6 +533,11 @@
             <!-- 运行天数提醒. -->
             
             <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025219138号-1</a>
+            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link ">

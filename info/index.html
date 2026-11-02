@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="基本信息, 刘潇鸿,个人简历,数据故事,新闻理想">
-    <meta name="description" content="刘潇鸿的个人简历与作品集，聚焦全媒体采编、数据新闻与内容创意。">
+    <meta name="description" content="刘潇鸿的个人网站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,11 +21,26 @@
     <link rel="icon" type="image/jpeg" href="/images/avatar.jpg">
     
     <style>
+        :root {
+            --cover-image: url('/images/cover/new_l.jpg');
+        }
         body{
-            background-image: url(/images/cover/00.jpg);
-            background-repeat:no-repeat;
-            background-size: 100% 100%;
-            background-attachment:fixed;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/cover/new_l.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.18;
+            z-index: -1;
         }
     </style>
 
@@ -82,17 +97,6 @@
     <a href="/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/info" class="waves-effect waves-light">
-      
-      <i class="fas fa-book" style="zoom: 0.6;"></i>
       
       <span>基本信息</span>
     </a>
@@ -155,7 +159,7 @@
         <div class="logo-name">刘潇鸿的个人网站</div>
         <div class="logo-desc">
             
-            刘潇鸿的个人简历与作品集，聚焦全媒体采编、数据新闻与内容创意。
+            Never really desperate, only the lost of the soul.
             
         </div>
     </div>
@@ -167,17 +171,6 @@
 		<a href="/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/info" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-book"></i>
 			
 			基本信息
 		</a>
@@ -244,13 +237,11 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/xhliu911/imagebed/raw/master/img/cover_00.jpg')">
+<div class="bg-cover pd-header post-cover post-cover-bg" style="--post-cover: url('/images/cover/new_l.jpg');">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">基本信息</h1>
-                </div>
+                <div class="brand"></div>
             </div>
         </div>
     </div>
@@ -261,12 +252,11 @@
 
 <main class="container content">
 
-    
     <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
+        <div class="card-content article-info" style="display: none;">
+            <div class="row tag-cate" style="display: none;">
                 <div class="col s7">
                     
                           <div class="article-tag">
@@ -283,7 +273,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2025-11-10
+                    2025-11-22
                 </div>
                 
 
@@ -303,15 +293,18 @@
         
 
         <div class="card-content article-card-content">
+            <h1 class="post-content-title">基本信息</h1>
+            
             <div id="articleContent">
-                <h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h2><div class="card info-hero">
+                <h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h2><p class="eyebrow">Personal Profile</p>
+
+<div class="card info-hero">
   <div class="card-content">
     <div class="row">
       <div class="col s12 m7">
-        <p class="eyebrow">News & Data Storyteller</p>
         <h3 class="hero-title">把公共议题讲得可信、可视、可传播</h3>
-        <p>刘潇鸿，南京大学新闻与传播专硕在读，专注公共议题、数据叙事与多媒体表达。过往在人民日报、央视新闻、荔枝新闻等平台完成头部选题与深度报道，希望以新闻专业主义为底色，将内容策划与数据洞察结合，为团队输送扎实又有温度的故事。</p>
-        <div class="hero-quote">“把生命高举于世俗之上，又融化于社会之中。”</div>
+        <p>    刘潇鸿，24岁，山西晋中人，中共党员。本科毕业于兰州大学，现为南京大学新闻传播学院专硕在读。关注公共议题、主流叙事与全媒体表达。曾在人民日报、中央广播电视总台等主流媒体实习，完成策划、调研、采写、编辑、运营等全媒体新闻实践。</p>
+        <div class="hero-quote">"把生命高举于世俗之上，又融化于社会之中。"</div>
         <div class="chip-group">
           <span class="info-chip">深度采编</span>
           <span class="info-chip">数据叙事</span>
@@ -320,52 +313,77 @@
         </div>
       </div>
       <div class="col s12 m5 center-align hero-photo">
-        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/life.jpg" alt="生活照" class="responsive-img circle">
+        <img src="/images/life.jpg" alt="生活照" class="responsive-img circle">
       </div>
     </div>
   </div>
 </div>
 
 <h3 id="关键信息"><a href="#关键信息" class="headerlink" title="关键信息"></a>关键信息</h3><div class="row info-highlight-grid">
-  <div class="col s12 m6">
-    <div class="card info-card">
+  <div class="col s12 m6 l4">
+    <div class="card info-card info-card-compact">
       <div class="card-content">
-        <span class="card-title">教育背景</span>
-        <p class="info-meta">南京大学 新闻与传播学院 · 新闻与传播专硕（2023-2026）</p>
-        <p class="info-meta">兰州大学 新闻与传播学院 · 广播电视学学士（2019-2023）</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6">
-    <div class="card info-card">
-      <div class="card-content">
-        <span class="card-title">职业方向</span>
-        <ul class="plain-list">
-          <li><strong>领域：</strong>全媒体报道 / 数据新闻策划 / 内容策略运营。</li>
-          <li><strong>能力：</strong>在文字、视频、交互图表之间切换，拆解复杂议题并重建大众语境。</li>
+        <span class="tag-heading">教育背景</span>
+        <ul class="info-list">
+          <li>
+            <div class="info-title">南京大学 · 新闻传播学院</div>
+            <div class="info-sub">新闻传播专硕 · 新闻实务方向（2023-2026）</div>
+          </li>
+          <li>
+            <div class="info-title">兰州大学 · 新闻与传播学院</div>
+            <div class="info-sub">广播电视学（2019-2023）</div>
+          </li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="col s12 m6">
-    <div class="card info-card">
+  <div class="col s12 m6 l4">
+    <div class="card info-card info-card-compact">
       <div class="card-content">
-        <span class="card-title">求职状态</span>
-        <ul class="plain-list">
-          <li>寻求媒体 / 内容 / 数据方向全职或长期实习。</li>
-          <li>可驻场北京并支持跨地协作，期待加入注重深度内容与创新表达的团队。</li>
+        <span class="tag-heading">求职方向</span>
+        <ul class="info-list">
+          <li>
+            <div class="info-title">中央级主流媒体</div>
+            <div class="info-sub">采编记者、内容生产</div>
+          </li>
+          <li>
+            <div class="info-title">高校及公共机构</div>
+            <div class="info-sub">行政、综合管理</div>
+          </li>
+          <li>
+            <div class="info-title">中央及国有企业</div>
+            <div class="info-sub">行政管理、品牌传播、公共关系、企业文化</div>
+          </li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="col s12 m6">
-    <div class="card info-card">
+  <div class="col s12 l4">
+    <div class="card info-card info-card-compact">
       <div class="card-content">
-        <span class="card-title">联系方式</span>
-        <ul class="plain-list">
-          <li><strong>邮箱：</strong><a href="mailto:liuxiaohong01911@163.com">liuxiaohong01911@163.com</a></li>
-          <li><strong>电话：</strong>186-3507-4601（请先邮件 / 电话沟通再加微信）</li>
-        </ul>
+        <span class="tag-heading">技能 & 兴趣</span>
+        <div class="info-meta">
+          <div class="info-meta-item">
+            <span class="meta-label">专业</span>
+            <span class="meta-value">策划、采访、写作、评论、运营、摄影摄像</span>
+          </div>
+          <div class="info-meta-item">
+            <span class="meta-label">软件</span>
+            <span class="meta-value">MS Office、Pr、Ps、Ai、剪映</span>
+          </div>
+          <div class="info-meta-item">
+            <span class="meta-label">数据</span>
+            <span class="meta-value">可画、镝数、八爪鱼爬虫</span>
+          </div>
+          <div class="info-meta-item">
+            <span class="meta-label">语言</span>
+            <span class="meta-value">CET-6、普通话一级乙等</span>
+          </div>
+          <div class="info-meta-item">
+            <span class="meta-label">兴趣</span>
+            <span class="meta-value">民族舞十级、播音主持、红十字救护员</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -373,17 +391,7 @@
 
 <div class="section-divider"></div>
 
-<h2 id="核心能力矩阵"><a href="#核心能力矩阵" class="headerlink" title="核心能力矩阵"></a>核心能力矩阵</h2><div class="card ability-radar-card" id="ability-radar-card">
-  <div class="card-content">
-    <div class="ability-radar-header">
-      <span class="card-title">能力画像</span>
-      <p class="grey-text text-darken-1">以项目成果与合作反馈为基础绘制</p>
-    </div>
-    <div id="ability-radar"></div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<h2 id="核心能力矩阵"><a href="#核心能力矩阵" class="headerlink" title="核心能力矩阵"></a>核心能力矩阵</h2><script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const radarEl = document.getElementById('ability-radar');
@@ -397,7 +405,7 @@
       { name: '策略策划', max: 100 },
       { name: '协同推进', max: 100 }
     ];
-    const values = [95, 90, 85, 88, 92];
+    const values = [95, 90, 85, 90, 85];
 
     radarChart.setOption({
       tooltip: {},
@@ -425,14 +433,20 @@
   });
 </script>
 
+<div class="card ability-radar-card">
+  <div class="card-content">
+    <div id="ability-radar"></div>
+  </div>
+</div>
+
+
 <div class="row ability-grid">
   <div class="col s12 m6">
     <div class="card ability-card">
       <div class="card-content">
-        <span class="ability-title">采编｜议题挖掘与叙事架构</span>
+        <span class="tag-heading">采编｜选题挖掘与写作</span>
         <ul>
-          <li>覆盖时政、民生、文化、评论等板块，累计署名稿件 100+，作品刊发于人民日报政文、央视新闻、新闻联播公众号。</li>
-          <li>擅长在紧迫时限中独立完成线索拓展、深度采访、多端稿件改写与排版，保持叙事节奏与信息准确度。</li>
+          <li>具备全媒体采写、编辑、评论能力，覆盖时政、公共政策、社会民生、文化与文艺评论等领域。曾在人民日报政治文化部、央视新闻、南京日报等媒体完成监督报道、人物专访、时政特稿与评论写作，多篇稿件刊发于“人民日报”报网、“央视新闻”“新闻联播”公众号及“南京日报”等平台，累计阅读量过50万。</li>
         </ul>
       </div>
     </div>
@@ -440,10 +454,10 @@
   <div class="col s12 m6">
     <div class="card ability-card">
       <div class="card-content">
-        <span class="ability-title">数据｜洞察提炼与可视化</span>
+        <span class="tag-heading">数据｜信息整合与可视化</span>
         <ul>
-          <li>担任《长三角上市公司发展报告 2024》数据负责人，搭建 2029 家企业指标体系，为决策提供定量依据。</li>
-          <li>主导《零工时代》调查、《“数”说高校专业调整》等项目，综合问卷、API 与公开数据，输出交互稿件与仪表盘。</li>
+          <li>具备数据收集、清洗、可视化与多源信息综合能力，完成多篇数据新闻作品，内容曾被澎湃、虎嗅等平台转载，并在全国与省级数据新闻大赛中获奖。可将政策文本、行业指标、舆论趋势转化为易读的图表与叙事结构。</li>
+          <li>具有机构类数据报告写作经验，曾参与《长三角上市公司发展质量分析2024》，参与数据统计、指标解读与报告成稿写作。</li>
         </ul>
       </div>
     </div>
@@ -451,10 +465,10 @@
   <div class="col s12 m6">
     <div class="card ability-card">
       <div class="card-content">
-        <span class="ability-title">影像｜视频策划与后期统筹</span>
+        <span class="tag-heading">影像｜视频策划与脚本创作</span>
         <ul>
-          <li>在荔枝新闻负责热点短视频选题、脚本与拍摄统筹，完成 8 条新闻短视频，累计播放 12.1w+。</li>
-          <li>熟练使用 PR、Final Cut、剪映与 AE，可独立交付专题片、人物故事及多平台适配物料。</li>
+          <li>具有较成熟的视频内容制作能力，参与过选题策划、脚本撰写、拍摄与后期剪辑的全流程。</li>
+          <li>曾在校园大型活动赛事、纪录片拍摄、专题片拍摄及省少儿春晚类活动中担任现场协调，参与机位调度和流程沟通。</li>
         </ul>
       </div>
     </div>
@@ -462,10 +476,9 @@
   <div class="col s12 m6">
     <div class="card ability-card">
       <div class="card-content">
-        <span class="ability-title">协同｜项目推进与标准建设</span>
+        <span class="tag-heading">协同｜跨部门沟通与流程执行</span>
         <ul>
-          <li>担任学院新媒体中心部长，搭建积分制与机动小组机制，主持 20+ 次选题会并审核稿件 120+。</li>
-          <li>在企业/媒体项目中负责多部门沟通、流程制定与复盘报告，确保节点推进与交付一致性。</li>
+          <li>在担任校园媒体总负责人期间，推动组织改革、建立机制流程，统筹专题与团队协作，具备稳定的执行力、沟通力。</li>
         </ul>
       </div>
     </div>
@@ -474,11 +487,26 @@
 
 <div class="section-divider"></div>
 
-<h3 id="代表成绩"><a href="#代表成绩" class="headerlink" title="代表成绩"></a>代表成绩</h3><ul class="highlight-list">
-  <li>人民日报读者来信头条《谁破解了孩子的未成年人模式》、央视新闻特稿《今天的菜市场，不止有菜》持续引发舆论关注。</li>
-  <li>连续在中国数据新闻大赛获奖（全国三等奖、江苏赛区二等奖），在数据新闻与监督报道领域保持产出。</li>
-  <li>获南京大学硕士研究生一等/二等学业奖学金及南京大学英才学业奖学金，验证自我驱动与研究能力。</li>
-</ul>
+<h3 id="代表成绩"><a href="#代表成绩" class="headerlink" title="代表成绩"></a>代表成绩</h3><div class="card summary-card">
+  <div class="card-content">
+    <div class="grid achievement-grid">
+      <div class="achievement-card">
+        <span class="tag-heading">学业</span>
+        <p>学业一等奖学金（多次）、优秀学生干部（多次）、优秀学生标兵、省级优秀毕业生等荣誉；以专业前 5% 成绩保送研究生。</p>
+      </div>
+      <div class="achievement-card">
+        <span class="tag-heading">竞赛</span>
+        <p>全国大学生校园媒体竞赛数据类一等奖、通讯类三等奖；中国数据新闻大赛三等奖、优秀奖；本硕期间保持持续产出与复盘。</p>
+      </div>
+      <div class="achievement-card">
+        <span class="tag-heading">作品</span>
+        <p>监督报道《谁破解了孩子的“未成年人”模式》刊发于《人民日报》07 版头条，引发热议；</p>
+        <p>时政特稿《今天的菜市场，不止有菜》在“央视新闻”“新闻联播”微信公众号阅读量超20w。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <p>更多经历详见 <a href="/education/">教育经历</a>、<a href="/internship/">实习经历</a>、<a href="/portfolio/">作品集</a> 与 <a href="/about/">关于我</a> 页面。</p>
 
@@ -490,15 +518,15 @@
 
 
 
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
+            <div class="tag_share" style="display: none;">
+                <div class="post-meta__tag-list" style="display: none;">
                     
                         <div class="article-tag">
                             <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                <div class="post_share" style="display: none;">
                     <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
@@ -533,7 +561,8 @@
 
     
 
-    
+    <div style="display: none;">
+        
 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
@@ -546,7 +575,8 @@
                 <a href="/info/index.html">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/cover_00.jpg" class="responsive-img" alt="基本信息">
+                        
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="基本信息">
                         
                         <span class="card-title">基本信息</span>
                     </div>
@@ -559,7 +589,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-22
                             </span>
                         <span class="publish-author">
                             
@@ -583,7 +613,8 @@
                 <a href="/info/index.html">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/cover_00.jpg" class="responsive-img" alt="基本信息">
+                        
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="基本信息">
                         
                         <span class="card-title">基本信息</span>
                     </div>
@@ -596,7 +627,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-22
                             </span>
                         <span class="publish-author">
                             
@@ -614,6 +645,7 @@
     </div>
 </article>
 
+    </div>
 </div>
 
 
@@ -633,7 +665,6 @@
 
 
 
-    
 
 </main>
 
@@ -665,6 +696,11 @@
             <!-- 运行天数提醒. -->
             
             <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025219138号-1</a>
+            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link ">

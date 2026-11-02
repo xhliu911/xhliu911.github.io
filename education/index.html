@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="教育经历, 刘潇鸿,个人简历,数据故事,新闻理想">
-    <meta name="description" content="刘潇鸿的个人简历与作品集，聚焦全媒体采编、数据新闻与内容创意。">
+    <meta name="description" content="刘潇鸿的个人网站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,11 +21,26 @@
     <link rel="icon" type="image/jpeg" href="/images/avatar.jpg">
     
     <style>
+        :root {
+            --cover-image: url('/images/cover/new_l.jpg');
+        }
         body{
-            background-image: url(/images/cover/00.jpg);
-            background-repeat:no-repeat;
-            background-size: 100% 100%;
-            background-attachment:fixed;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/cover/new_l.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.18;
+            z-index: -1;
         }
     </style>
 
@@ -82,17 +97,6 @@
     <a href="/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/info" class="waves-effect waves-light">
-      
-      <i class="fas fa-book" style="zoom: 0.6;"></i>
       
       <span>基本信息</span>
     </a>
@@ -155,7 +159,7 @@
         <div class="logo-name">刘潇鸿的个人网站</div>
         <div class="logo-desc">
             
-            刘潇鸿的个人简历与作品集，聚焦全媒体采编、数据新闻与内容创意。
+            Never really desperate, only the lost of the soul.
             
         </div>
     </div>
@@ -167,17 +171,6 @@
 		<a href="/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/info" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-book"></i>
 			
 			基本信息
 		</a>
@@ -244,13 +237,11 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/xhliu911/imagebed/raw/master/img/cover_01.jpg')">
+<div class="bg-cover pd-header post-cover post-cover-bg" style="--post-cover: url('/images/cover/new_l.jpg');">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">教育经历</h1>
-                </div>
+                <div class="brand"></div>
             </div>
         </div>
     </div>
@@ -261,12 +252,11 @@
 
 <main class="container content">
 
-    
     <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
+        <div class="card-content article-info" style="display: none;">
+            <div class="row tag-cate" style="display: none;">
                 <div class="col s7">
                     
                           <div class="article-tag">
@@ -283,7 +273,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2025-11-10
+                    2025-11-22
                 </div>
                 
 
@@ -303,11 +293,12 @@
         
 
         <div class="card-content article-card-content">
+            <h1 class="post-content-title">教育经历</h1>
+            
             <div id="articleContent">
                 <h2 id="学历综述"><a href="#学历综述" class="headerlink" title="学历综述"></a>学历综述</h2><p class="eyebrow">Academic Journey</p>
-<p>在兰州大学夯实新闻传播理论与采编技能后，于南京大学继续深耕全媒体内容与数据叙事能力。两个阶段共同塑造了扎实方法论与高执行力的复合型背景。</p>
 
-<div class="row edu-card-grid">
+<!-- <div class="row edu-card-grid">
   <div class="col s12 m6">
     <div class="card edu-card">
       <div class="card-content edu-card-main">
@@ -338,7 +329,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="card edu-timeline">
   <div class="card-content">
@@ -347,24 +338,26 @@
       <div class="edu-timeline-entry">
         <div class="edu-timeline-node"></div>
         <div class="edu-timeline-body">
-          <span class="chip edu-chip">2023.09 - 至今</span>
-          <h5>南京大学 · 研究生阶段</h5>
-          <p>担任 2023 级专硕团支部组织委员，策划“端午里的南京”等品牌活动；参与南京日报实训，负责《长三角上市公司发展报告 2024》数据分析与图表呈现。</p>
+          <span class="chip edu-chip">2023.09 - 2026.06</span>
+          <h5>南京大学 （硕士）｜ GPA 3.88/4 、专业前10%</h5>
+          <p>短视频制作与传播（94）、口语表达（91）、可视化新闻设计（90）、媒介经营管理（90）</p>
         </div>
       </div>
       <div class="edu-timeline-entry">
         <div class="edu-timeline-node"></div>
         <div class="edu-timeline-body">
           <span class="chip edu-chip">2019.09 - 2023.06</span>
-          <h5>兰州大学 · 本科阶段</h5>
-          <p>统筹学院新媒体中心改革，主持 20+ 次选题会、审核稿件 120+；主创《兰大观察》栏目，完成多机位直播与纪录片拍摄。</p>
+          <h5>兰州大学 （本科）｜ GPA 4.07/5 、专业前5%</h5>
+          <p>广播电视新闻采编（95）、电视编导与策划（100）、电视直播与现场报道（98）、公共关系策划与实务（96）、新闻评论（95）、播音与主持双语（95）</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<h2 id="学习与课程亮点"><a href="#学习与课程亮点" class="headerlink" title="学习与课程亮点"></a>学习与课程亮点</h2><div class="row edu-detail-grid">
+<!-- ## 学习与课程亮点 -->
+<!-- 
+<div class="row edu-detail-grid">
   <div class="col s12 m6">
     <div class="card edu-detail-card">
       <div class="card-content">
@@ -389,25 +382,25 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<h2 id="科研与项目实践"><a href="#科研与项目实践" class="headerlink" title="科研与项目实践"></a>科研与项目实践</h2><div class="card stacked-card">
+<h2 id="科研与项目"><a href="#科研与项目" class="headerlink" title="科研与项目"></a>科研与项目</h2><div class="card stacked-card">
   <div class="card-content">
     <div class="stack-item">
-      <h6>《长三角上市公司发展报告 2024》</h6>
-      <p>负责 2029 家企业数据清洗、指标体系搭建与图表呈现，为地方政府与媒体报道提供量化支持。</p>
+      <p class="stack-lead"><strong>国家级大创｜《Web2.0 时代社区治理和乡村治理比较研究》</strong></p>
+      <p class="stack-desc">搜集文献、整理田野调查文字资料并进行成果汇报，产出论文《非常法时期基于互联网平台的社区治理行为效能分析》。</p>
     </div>
     <div class="stack-item">
-      <h6>校级大创《移动互联网+新媒体环境下饭圈文化现象浅析》</h6>
-      <p>承担舆情调研与结题报告，成果发表于《声屏世界》，获 2021 年“挑战杯”兰州大学优秀奖。</p>
+      <p class="stack-lead"><strong>校级大创｜《移动互联网+新媒体环境下饭圈文化现象浅析》</strong></p>
+      <p class="stack-desc">负责舆情调研、访谈与结题报告，成果发表于《声屏世界》，获 2021 年“挑战杯”兰州大学优秀奖。</p>
     </div>
     <div class="stack-item">
-      <h6>国家级大创《Web2.0 时代社区治理和乡村治理比较研究》</h6>
-      <p>负责问卷设计、数据分析与项目汇报，产出《非常法时期基于互联网平台的社区治理行为效能分析》。</p>
+      <p class="stack-lead"><strong>媒体承接政府项目｜《长三角上市公司发展报告 2024》</strong></p>
+      <p class="stack-desc">对2023年长三角四省2029家上市公司的营业总收、地域细分及行业所属等指标进行数据分析和统计整理。报告呈送南京市委、市政府以供决策参考。</p>
     </div>
     <div class="stack-item">
-      <h6>论文发表</h6>
-      <ul>
+      <p class="stack-lead"><strong>论文发表</strong></p>
+      <ul class="flat-list">
         <li>《浅析新媒体语境下“沉默的螺旋”现象在微博传播中的影响力——以“肖战事件”为例》，《声屏世界》，2020.12（第四作者）。</li>
         <li>《新媒体时代节目主持人人际传播素质提升分析》，《新闻研究导刊》，2022.06（独立作者）。</li>
       </ul>
@@ -415,37 +408,50 @@
   </div>
 </div>
 
-<h2 id="校园与社会实践"><a href="#校园与社会实践" class="headerlink" title="校园与社会实践"></a>校园与社会实践</h2><ul class="highlight-list">
-  <li><strong>“重走中国西北角”接力采访（2020）</strong>：深入甘肃张掖调研文旅开发与乡村振兴，完成系列报道。</li>
-  <li><strong>“非遗+扶贫”暑期“三下乡”实践（2020）</strong>：调研定西剪纸与庆阳香包产业，提出产业化路径建议。</li>
-  <li><strong>萃英在线音视频部（2019－2022）</strong>：担任摄像/编辑，主创《兰大观察》栏目，协调校运会多机位直播并担任现场导播。</li>
-</ul>
-
-<h2 id="校园领导力"><a href="#校园领导力" class="headerlink" title="校园领导力"></a>校园领导力</h2><div class="row leadership-grid">
+<h2 id="学生工作"><a href="#学生工作" class="headerlink" title="学生工作"></a>学生工作</h2><div class="row ability-grid">
   <div class="col s12 m6">
-    <div class="card leadership-card">
+    <div class="card ability-card">
       <div class="card-content">
-        <span class="chip">2024 - 至今</span>
-        <h6>南京大学新闻传播学院 2023 级专硕团支部 · 组织委员</h6>
-        <p>负责团费收缴、内容策划与执行，推动支部制度化运作与内容传播。</p>
+        <span class="tag-heading">兰州大学2019级广播电视学班｜学习委员</span>
+        <ul>
+          <li>高效完成日常作业的收发与整理，确保教学信息顺畅传达。</li>
+          <li>及时反馈同学学习诉求，协助教秘完成教学资源借用、成绩录入等辅助工作。</li>
+        </ul>
       </div>
     </div>
   </div>
   <div class="col s12 m6">
-    <div class="card leadership-card">
+    <div class="card ability-card">
       <div class="card-content">
-        <span class="chip">2020 - 2022</span>
-        <h6>兰州大学新闻与传播学院新媒体中心 · 部长/常委</h6>
-        <p>引入积分制与机动小组机制，统筹栏目改革、人员培训与选题会，保障协同效率。</p>
+        <span class="tag-heading">南京大学2023级新闻与传播专硕团支部｜组织委员</span>
+        <ul>
+          <li>完成支部基础事务，如团费的收缴与管理工作。</li>
+          <li>协助策划并执行支部活动（如端午节活动），丰富团员文化生活。</li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="col s12">
-    <div class="card leadership-card">
+  <div class="col s12 m6">
+    <div class="card ability-card">
       <div class="card-content">
-        <span class="chip">2019 - 2023</span>
-        <h6>班级与学院服务</h6>
-        <p>连任学委、生活委员，协调教学信息传达、活动执行与反馈机制，确保班级事务高效推进。</p>
+        <span class="tag-heading">兰州大学新闻与传播学院新媒体中心｜主任</span>
+        <ul>
+          <li>内容策划与创作：主导“深度”栏目，策划并执行特殊儿童教育、器官捐献等多个社会性选题。</li>
+          <li>团队管理与运营改革：在院媒改革瓶颈期上任，通过打破部门壁垒、成立机动小组、革新招新与考核机制（如引入积分制）等一系列举措，成功激发团队活力，提升了内容质量与运营效率。</li>
+          <li>流程规范化建设：主持选题会20余次，审核修改稿件超120篇；规范了工作总结与换届问卷反馈机制，重新确立了经费与资产管理制度，为组织的长期健康发展奠定了坚实基础。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m6">
+    <div class="card ability-card">
+      <div class="card-content">
+        <span class="tag-heading">兰州大学校园媒体萃英在线音视频（摄像）部｜编辑</span>
+        <ul>
+          <li>原创栏目制作：作为核心主创成员之一，完成校园热点采访节目《兰大观察》4期，负责从选题策划、现场拍摄到后期剪辑全流程制作。</li>
+          <li>大型活动摄制：参与兰州大学新生文艺汇演、“12·9”调研等多项校内重大活动的现场摄像及视频剪辑工作。</li>
+          <li>赛事转播支持：担任校运会现场导播，负责多机位调度。</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -453,26 +459,38 @@
 
 <h2 id="荣誉与奖项"><a href="#荣誉与奖项" class="headerlink" title="荣誉与奖项"></a>荣誉与奖项</h2><div class="card stacked-card">
   <div class="card-content">
-    <h6>专业竞赛</h6>
+    <span class="tag-heading">专业竞赛</span>
     <ul>
-      <li>第十届中国数据新闻大赛江苏赛区二等奖（2025）</li>
-      <li>第九届中国数据新闻大赛全国三等奖 / 江苏赛区二等奖（2024）</li>
-      <li>第十三届铁塔记者节融媒体类一等奖（2024）</li>
-      <li>第四届校园媒体大赛数据类一等奖（2024）</li>
-      <li>兰州大学“好新闻奖”优秀学生记者提名（2022）</li>
-      <li>第三届校园媒体大赛深度报道类三等奖（2022）</li>
-      <li>全国大学生广告艺术节学院奖入围奖（2022）</li>
-      <li>第九届铁塔记者节新闻采写大赛通讯类二等奖（2021）</li>
+      <li>第十届中国数据新闻大赛全国优秀奖、江苏赛区二等奖 (2025)</li>
+      <li>第九届中国数据新闻大赛全国三等奖 (2024)</li>
+      <li>第九届中国数据新闻大赛江苏赛区二等奖 (2024)</li>
+      <li>第十三届铁塔记者节融媒体类一等奖 (2024)</li>
+      <li>第四届校园媒体大赛数据类一等奖 (2024)</li>
+      <li>2021年兰州大学“好新闻奖”优秀学生记者提名 (2022)</li>
+      <li>第三届校园媒体大赛深度报道类三等奖 (2022)</li>
+      <li>全国大学生广告艺术节学院奖入围奖 (2022)</li>
+      <li>第九届铁塔记者节新闻采写大赛通讯类二等奖 (2021)</li>
+      <li>第七届红枫大学生记者节入围奖 (2020)</li>
     </ul>
-    <h6>学业荣誉</h6>
+    <span class="tag-heading">学业荣誉</span>
     <ul>
-      <li>南京大学英才学业奖学金二等奖（2025）</li>
-      <li>南京大学硕士研究生一等 / 二等学业奖学金（2023-2024）</li>
-      <li>甘肃省普通高校优秀毕业生 / 兰州大学优秀毕业生（2023）</li>
-      <li>兰州大学优秀学生一等奖学金、优秀学生标兵（2022）</li>
-      <li>兰州大学优秀学生团干部（2022）</li>
-      <li>兰州大学优秀学生二等奖学金、优秀学生干部（2021）</li>
-      <li>兰州大学优秀共青团员、社会实践优秀队员（2020-2021）</li>
+      <li>2025年南京大学硕士研究生一等学业奖学金（2025）</li> 
+      <li>2025年南京大学英才学业奖学金二等奖 (2025)</li> 
+      <li>2024年南京大学硕士研究生二等学业奖学金 (2024)</li> 
+      <li>2023年南京大学硕士研究生一等学业奖学金 (2023)</li>
+      <li>2023届甘肃省普通高校优秀毕业生 (2023)</li> 
+      <li>兰州大学2023届优秀毕业生 (2023)</li> 
+      <li>兰州大学2021-2022学年优秀学生一等奖学金 (2022)</li> 
+      <li>兰州大学2021-2022学年优秀学生标兵 (2022)</li>
+      <li>兰州大学2021年度优秀学生团干部 (2022)</li> 
+      <li>兰州大学2020-2021学年优秀学生二等奖学金 (2021)</li>
+      <li>兰州大学2020-2021学年优秀学生干部 (2021)</li> 
+      <li>兰州大学2020-2021学年学生标兵 (2021)</li> 
+      <li>兰州大学2020-2021学年优秀共青团员 (2021)</li> 
+      <li>2021年“挑战杯”兰州大学大学生课外科技作品竞赛优秀奖 (2021)</li> 
+      <li>2019-2020学年学生标兵 (2020)</li> 
+      <li>2019-2020学年优秀学生二等奖学金 (2020)</li> 
+      <li>兰州大学2020年暑期文化科技卫生“三下乡”社会实践活动优秀队员 (2020)</li>
     </ul>
   </div>
 </div>
@@ -485,15 +503,15 @@
 
 
 
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
+            <div class="tag_share" style="display: none;">
+                <div class="post-meta__tag-list" style="display: none;">
                     
                         <div class="article-tag">
                             <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                <div class="post_share" style="display: none;">
                     <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
@@ -528,7 +546,8 @@
 
     
 
-    
+    <div style="display: none;">
+        
 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
@@ -541,7 +560,8 @@
                 <a href="/education/index.html">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/cover_01.jpg" class="responsive-img" alt="教育经历">
+                        
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="教育经历">
                         
                         <span class="card-title">教育经历</span>
                     </div>
@@ -554,7 +574,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-22
                             </span>
                         <span class="publish-author">
                             
@@ -578,7 +598,8 @@
                 <a href="/education/index.html">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/cover_01.jpg" class="responsive-img" alt="教育经历">
+                        
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="教育经历">
                         
                         <span class="card-title">教育经历</span>
                     </div>
@@ -591,7 +612,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-22
                             </span>
                         <span class="publish-author">
                             
@@ -609,6 +630,7 @@
     </div>
 </article>
 
+    </div>
 </div>
 
 
@@ -628,7 +650,6 @@
 
 
 
-    
 
 </main>
 
@@ -660,6 +681,11 @@
             <!-- 运行天数提醒. -->
             
             <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025219138号-1</a>
+            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link ">

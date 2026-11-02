@@ -8,6 +8,7 @@
     <meta name="description" content="
 原文链接：阅读原文 →
 
+发布平台：“荔枝新闻”抖音、微博
 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -24,11 +25,26 @@
     <link rel="icon" type="image/jpeg" href="/images/avatar.jpg">
     
     <style>
+        :root {
+            --cover-image: url('/images/cover/new_l.jpg');
+        }
         body{
-            background-image: url(/images/cover/00.jpg);
-            background-repeat:no-repeat;
-            background-size: 100% 100%;
-            background-attachment:fixed;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/cover/new_l.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.18;
+            z-index: -1;
         }
     </style>
 
@@ -87,17 +103,6 @@
     <a href="/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/info" class="waves-effect waves-light">
-      
-      <i class="fas fa-book" style="zoom: 0.6;"></i>
       
       <span>基本信息</span>
     </a>
@@ -160,7 +165,7 @@
         <div class="logo-name">刘潇鸿的个人网站</div>
         <div class="logo-desc">
             
-            刘潇鸿的个人简历与作品集，聚焦全媒体采编、数据新闻与内容创意。
+            Never really desperate, only the lost of the soul.
             
         </div>
     </div>
@@ -172,17 +177,6 @@
 		<a href="/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/info" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-book"></i>
 			
 			基本信息
 		</a>
@@ -249,13 +243,11 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/xhliu911/imagebed/raw/master/img/dsp_lzxw-02.png')">
+<div class="bg-cover pd-header post-cover post-cover-bg" style="--post-cover: url('/images/cover/new_l.jpg');">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">官方回应佛山猫咪疑被成箱装载运输：正调查</h1>
-                </div>
+                <div class="brand"></div>
             </div>
         </div>
     </div>
@@ -264,22 +256,19 @@
 
 
 
-<main class="post-container content">
+<main class="container content">
 
-    
-    <div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
+        <div class="card-content article-info" style="display: none;">
+            <div class="row tag-cate" style="display: none;">
                 <div class="col s7">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                                <span class="chip bg-color">短视频</span>
+                            <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91%E6%96%B0%E9%97%BB/">
+                                <span class="chip bg-color">短视频新闻</span>
                             </a>
                         
                     </div>
@@ -303,7 +292,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2024-01-01
+                    2024-01-17
                 </div>
                 
 
@@ -323,10 +312,17 @@
         
 
         <div class="card-content article-card-content">
+            <h1 class="post-content-title">官方回应佛山猫咪疑被成箱装载运输：正调查</h1>
+            
+            <div class="post-inline-cover">
+                <img src="/images/dsp/lzxw-02.png" alt="官方回应佛山猫咪疑被成箱装载运输：正调查 封面">
+            </div>
+            
             <div id="articleContent">
                 <blockquote>
 <p>原文链接：<a target="_blank" rel="noopener" href="https://weibo.com/1796087453/4991127904325536">阅读原文 →</a></p>
 </blockquote>
+<p>发布平台：“荔枝新闻”抖音、微博</p>
 
                 
             </div>
@@ -336,19 +332,19 @@
 
 
 
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
+            <div class="tag_share" style="display: none;">
+                <div class="post-meta__tag-list" style="display: none;">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                                    <span class="chip bg-color">短视频</span>
+                                <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91%E6%96%B0%E9%97%BB/">
+                                    <span class="chip bg-color">短视频新闻</span>
                                 </a>
                             
                         </div>
                     
                 </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                <div class="post_share" style="display: none;">
                     <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
@@ -383,7 +379,8 @@
 
     
 
-    
+    <div style="display: none;">
+        
 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
@@ -392,12 +389,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/works/dspx-lzxw-003/">
+                <a href="/works/wztx-jsgd-001/">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/dsp_lzxw-03.png" class="responsive-img" alt="好友回应哺乳期宝妈因流感去世">
+                        <img src="/images/wztx/lzxw.png" class="responsive-img" alt="2023年全省法院共审执结214.7万件案件 为劳动者追回“血汗钱”11.4亿元">
                         
-                        <span class="card-title">好友回应哺乳期宝妈因流感去世</span>
+                        <span class="card-title">2023年全省法院共审执结214.7万件案件 为劳动者追回“血汗钱”11.4亿元</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -408,14 +405,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-01
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-18
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%9F%AD%E8%A7%86%E9%A2%91%E6%96%B0%E9%97%BB/" class="post-category">
-                                    短视频新闻
+                            <a href="/categories/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/" class="post-category">
+                                    文字通讯
                                 </a>
                             
                             
@@ -425,8 +422,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                        <span class="chip bg-color">短视频</span>
+                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                        <span class="chip bg-color">文字通讯</span>
                     </a>
                     
                 </div>
@@ -440,12 +437,12 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/works/kjbd-xdkb-001/">
+                <a href="/works/xwpl-qt-001/">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/kjbd_xdkb.png" class="responsive-img" alt="哈利·波特的隐形斗篷将成日常用品？南大教授揭秘隐身术？">
+                        <img src="/images/xwpl/qt.png" class="responsive-img" alt="监控视频频繁外流，我们该怎么办？">
                         
-                        <span class="card-title">哈利·波特的隐形斗篷将成日常用品？南大教授揭秘隐身术？</span>
+                        <span class="card-title">监控视频频繁外流，我们该怎么办？</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -456,14 +453,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%A7%91%E6%8A%80%E6%8A%A5%E9%81%93/" class="post-category">
-                                    科技报道
+                            <a href="/categories/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/" class="post-category">
+                                    新闻评论
                                 </a>
                             
                             
@@ -473,8 +470,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%A7%91%E6%8A%80%E6%8A%A5%E9%81%93/">
-                        <span class="chip bg-color">科技报道</span>
+                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                        <span class="chip bg-color">新闻评论</span>
                     </a>
                     
                 </div>
@@ -485,6 +482,7 @@
     </div>
 </article>
 
+    </div>
 </div>
 
 
@@ -504,88 +502,6 @@
 
 
 
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
-    
 
 </main>
 
@@ -617,6 +533,11 @@
             <!-- 运行天数提醒. -->
             
             <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025219138号-1</a>
+            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link ">

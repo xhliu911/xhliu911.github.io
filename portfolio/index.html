@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="作品集, 刘潇鸿,个人简历,数据故事,新闻理想">
-    <meta name="description" content="刘潇鸿的个人简历与作品集，聚焦全媒体采编、数据新闻与内容创意。">
+    <meta name="description" content="刘潇鸿的个人网站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,11 +21,26 @@
     <link rel="icon" type="image/jpeg" href="/images/avatar.jpg">
     
     <style>
+        :root {
+            --cover-image: url('/images/cover/new_l.jpg');
+        }
         body{
-            background-image: url(/images/cover/00.jpg);
-            background-repeat:no-repeat;
-            background-size: 100% 100%;
-            background-attachment:fixed;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/cover/new_l.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.18;
+            z-index: -1;
         }
     </style>
 
@@ -82,17 +97,6 @@
     <a href="/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/info" class="waves-effect waves-light">
-      
-      <i class="fas fa-book" style="zoom: 0.6;"></i>
       
       <span>基本信息</span>
     </a>
@@ -155,7 +159,7 @@
         <div class="logo-name">刘潇鸿的个人网站</div>
         <div class="logo-desc">
             
-            刘潇鸿的个人简历与作品集，聚焦全媒体采编、数据新闻与内容创意。
+            Never really desperate, only the lost of the soul.
             
         </div>
     </div>
@@ -167,17 +171,6 @@
 		<a href="/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/info" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-book"></i>
 			
 			基本信息
 		</a>
@@ -260,10 +253,6 @@
 </div>
 
 
-<script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
-</script>
-
 
     </div>
 </div>
@@ -274,13 +263,8 @@
         <div class="portfolio-intro__card card">
             <div class="card-content">
                 <blockquote>
-<p>以公共议题、数据叙事与多媒体表达为主线，以下作品已按内容类型自动整理，可直接点击卡片查看作品详情。</p>
+<p>以下为文字和视频作品，均已发表，可点击下方分类tag或卡片查看详情。摄影、海报设计等作品请在“关于我”页面查看～</p>
 </blockquote>
-<ul>
-<li>聚焦人民日报、央视新闻、荔枝新闻等平台的头部稿件与重点项目。</li>
-<li>涵盖文字通讯、数据新闻、深度报道、评论及短视频等多种形态。</li>
-<li>代表作品阅读量最高突破 50w+，多篇入选部委与地方机构案例库。</li>
-</ul>
 
             </div>
         </div>
@@ -293,17 +277,26 @@
 <div id="tags" class="container chip-container">
     <div class="card">
         <div class="card-content">
-            <div class="tag-title center-align">
+            <div class="tag-title center-align portfolio-tags-title">
                 <i class="fas fa-tags"></i>&nbsp;&nbsp;Post Tags
             </div>
-            <div class="tag-chips">
+            <div class="tag-chips portfolio-tag-chips">
                 
                 
-                <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/" title="短视频: 8">
+                <a href="/tags/%E5%87%BA%E9%95%9C%E6%8A%A5%E9%81%93/" title="出镜报道: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="短视频" style="background-color: #F9EBEA;">短视频
-                        <span class="tag-length">8</span>
+                            data-tagname="出镜报道" style="background-color: #F9EBEA;">出镜报道
+                        <span class="tag-length">3</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91%E6%96%B0%E9%97%BB/" title="短视频新闻: 3">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="短视频新闻" style="background-color: #F5EEF8;">短视频新闻
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
@@ -311,7 +304,7 @@
                 <a href="/tags/%E7%9B%91%E7%9D%A3%E6%8A%A5%E9%81%93/" title="监督报道: 5">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="监督报道" style="background-color: #F5EEF8;">监督报道
+                            data-tagname="监督报道" style="background-color: #D5F5E3;">监督报道
                         <span class="tag-length">5</span>
                     </span>
                 </a>
@@ -320,7 +313,16 @@
                 <a href="/tags/%E7%A7%91%E6%8A%80%E6%8A%A5%E9%81%93/" title="科技报道: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="科技报道" style="background-color: #D5F5E3;">科技报道
+                            data-tagname="科技报道" style="background-color: #E8F8F5;">科技报道
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E4%BA%BA%E7%89%A9%E5%AE%A3%E4%BC%A0/" title="人物宣传: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="人物宣传" style="background-color: #FEF9E7;">人物宣传
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -329,53 +331,44 @@
                 <a href="/tags/%E6%95%B0%E6%8D%AE%E6%96%B0%E9%97%BB/" title="数据新闻: 4">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="数据新闻" style="background-color: #E8F8F5;">数据新闻
+                            data-tagname="数据新闻" style="background-color: #F8F9F9;">数据新闻
                         <span class="tag-length">4</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E8%A7%86%E9%A2%91/" title="视频: 1">
+                <a href="/tags/%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91/" title="视频剪辑: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="视频" style="background-color: #FEF9E7;">视频
+                            data-tagname="视频剪辑" style="background-color: #82E0AA;">视频剪辑
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/" title="深度报道: 7">
+                <a href="/tags/%E7%89%B9%E7%A8%BF-%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/" title="特稿/深度报道: 7">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="深度报道" style="background-color: #F8F9F9;">深度报道
+                            data-tagname="特稿/深度报道" style="background-color: #D7BDE2;">特稿/深度报道
                         <span class="tag-length">7</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/" title="新闻评论: 15">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="新闻评论" style="background-color: #82E0AA;">新闻评论
-                        <span class="tag-length">15</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/" title="人民日报: 10">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="人民日报" style="background-color: #D7BDE2;">人民日报
-                        <span class="tag-length">10</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/" title="文字通讯: 3">
+                <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/" title="文字通讯: 19">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="文字通讯" style="background-color: #A3E4D7;">文字通讯
-                        <span class="tag-length">3</span>
+                        <span class="tag-length">19</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/" title="新闻评论: 17">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="新闻评论" style="background-color: #85C1E9;">新闻评论
+                        <span class="tag-length">17</span>
                     </span>
                 </a>
                 
@@ -383,31 +376,7 @@
         </div>
     </div>
 </div>
-        
-        <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
-<style type="text/css">
-    #tag-wordcloud {
-        width: 100%;
-        height: 300px;
-    }
-</style>
 
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="tag-wordcloud" class="card-content"></div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
-<script type="text/javascript">
-    
-
-    $('#tag-wordcloud').jQCloud([{"text":"短视频","weight":8,"link":"/tags/短视频/"},{"text":"监督报道","weight":5,"link":"/tags/监督报道/"},{"text":"科技报道","weight":2,"link":"/tags/科技报道/"},{"text":"数据新闻","weight":4,"link":"/tags/数据新闻/"},{"text":"视频","weight":1,"link":"/tags/视频/"},{"text":"深度报道","weight":7,"link":"/tags/深度报道/"},{"text":"新闻评论","weight":15,"link":"/tags/新闻评论/"},{"text":"人民日报","weight":10,"link":"/tags/人民日报/"},{"text":"文字通讯","weight":3,"link":"/tags/文字通讯/"}], {
-        autoResize: true
-    });
-</script>
-
-        
     </div>
 
     
@@ -420,17 +389,251 @@
             <section id="portfolio-文字通讯" class="portfolio-section" data-aos="fade-up">
                 <div class="portfolio-section__header">
                     <h2 class="portfolio-section__title">文字通讯</h2>
-                    <span class="portfolio-section__count">共 18 篇</span>
+                    <span class="portfolio-section__count">共 19 篇</span>
                 </div>
                 <article class="articles portfolio-grid">
                     <div class="row article-row">
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/wztx-rmrb-009/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="群众主体、群众主创、群众主享：宁陕“村光大道”促进农文旅融合发展">
+                                        
+                                        <span class="card-title">群众主体、群众主创、群众主享：宁陕“村光大道”促进农文旅融合发展</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-07-29
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/wztx-rmrb-007/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="涅瓦河畔的遐思——列宾艺术特展”在京开展 92件珍品亮相国博">
+                                        
+                                        <span class="card-title">涅瓦河畔的遐思——列宾艺术特展”在京开展 92件珍品亮相国博</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-07-24
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/wztx-rmrb-004/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="首师大原创话剧《敬修先生》上演 探索“以戏育人”新路径">
+                                        
+                                        <span class="card-title">首师大原创话剧《敬修先生》上演 探索“以戏育人”新路径</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-07-10
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/wztx-rmrb-003/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="“和美边疆·民族同歌——新疆西藏题材美术作品展”在京启幕">
+                                        
+                                        <span class="card-title">“和美边疆·民族同歌——新疆西藏题材美术作品展”在京启幕</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-06-30
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/wztx-rmrb-002/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="讲述三峡巨变，《新三峡》引起观众关于时代变迁共鸣">
+                                        
+                                        <span class="card-title">讲述三峡巨变，《新三峡》引起观众关于时代变迁共鸣</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-06-21
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/wztx-rmrb-001/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="以乐为媒 同奏凯歌 “音乐大思政课” 举办">
+                                        
+                                        <span class="card-title">以乐为媒 同奏凯歌 “音乐大思政课” 举办</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-06-17
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-xwlb-002/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_xwlb-02.png" class="responsive-img" alt="@所有家长 人生教育规划，这些重点要知道→">
+                                        <img src="/images/wztx/xwlb-02.png" class="responsive-img" alt="@所有家长 人生教育规划，这些重点要知道→">
                                         
                                         <span class="card-title">@所有家长 人生教育规划，这些重点要知道→</span>
                                     </div>
@@ -464,12 +667,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-xwlb-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_xwlb-01.png" class="responsive-img" alt="十四届全国人大三次会议闭幕 表决通过多项决议">
+                                        <img src="/images/wztx/xwlb-01.png" class="responsive-img" alt="十四届全国人大三次会议闭幕 表决通过多项决议">
                                         
                                         <span class="card-title">十四届全国人大三次会议闭幕 表决通过多项决议</span>
                                     </div>
@@ -503,12 +706,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-qt-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_zjcx.png" class="responsive-img" alt="“2024紫金媒体融合创新实践暨报社社长总编辑岗位培训班”成功举办">
+                                        <img src="/images/wztx/zjcx.png" class="responsive-img" alt="“2024紫金媒体融合创新实践暨报社社长总编辑岗位培训班”成功举办">
                                         
                                         <span class="card-title">“2024紫金媒体融合创新实践暨报社社长总编辑岗位培训班”成功举办</span>
                                     </div>
@@ -533,8 +736,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
                                     </a>
                                     
                                 </div>
@@ -542,51 +745,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/wztx-rmrb-002/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="讲述三峡巨变，《新三峡》引起观众关于时代变迁共鸣">
-                                        
-                                        <span class="card-title">讲述三峡巨变，《新三峡》引起观众关于时代变迁共鸣</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-06-28
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                                        <span class="chip bg-color">人民日报</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-rmrb-005/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="原创音乐话剧《一张报纸的抗战》将于年底首演">
+                                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="原创音乐话剧《一张报纸的抗战》将于年底首演">
                                         
                                         <span class="card-title">原创音乐话剧《一张报纸的抗战》将于年底首演</span>
                                     </div>
@@ -611,8 +775,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                                        <span class="chip bg-color">人民日报</span>
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
                                     </a>
                                     
                                 </div>
@@ -620,12 +784,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-rmrb-006/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="音乐剧《大状王》将在天桥艺术中心上演">
+                                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="音乐剧《大状王》将在天桥艺术中心上演">
                                         
                                         <span class="card-title">音乐剧《大状王》将在天桥艺术中心上演</span>
                                     </div>
@@ -650,8 +814,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                                        <span class="chip bg-color">人民日报</span>
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
                                     </a>
                                     
                                 </div>
@@ -659,12 +823,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-rmrb-008/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="村民站C位 百姓当主角">
+                                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="村民站C位 百姓当主角">
                                         
                                         <span class="card-title">村民站C位 百姓当主角</span>
                                     </div>
@@ -689,8 +853,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                                        <span class="chip bg-color">人民日报</span>
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
                                     </a>
                                     
                                 </div>
@@ -698,12 +862,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-rmrb-010/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="全国青少年美育示范展演独唱与合作演唱在浙江宁波唱响">
+                                        <img src="/images/wztx/rmrb.png" class="responsive-img" alt="全国青少年美育示范展演独唱与合作演唱在浙江宁波唱响">
                                         
                                         <span class="card-title">全国青少年美育示范展演独唱与合作演唱在浙江宁波唱响</span>
                                     </div>
@@ -728,8 +892,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                                        <span class="chip bg-color">人民日报</span>
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
                                     </a>
                                     
                                 </div>
@@ -737,12 +901,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-jsgd-005/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_lzxw.png" class="responsive-img" alt="春节7天假江苏文旅消费超150亿 消保委发布假期消费调查">
+                                        <img src="/images/wztx/lzxw.png" class="responsive-img" alt="春节7天假江苏文旅消费超150亿 消保委发布假期消费调查">
                                         
                                         <span class="card-title">春节7天假江苏文旅消费超150亿 消保委发布假期消费调查</span>
                                     </div>
@@ -767,8 +931,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                                        <span class="chip bg-color">短视频</span>
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
                                     </a>
                                     
                                 </div>
@@ -776,12 +940,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-jsgd-004/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_lzxw.png" class="responsive-img" alt="打算冰雪游、购买预制菜要如何“避坑” 江苏消保委给出春节消费提示">
+                                        <img src="/images/wztx/lzxw.png" class="responsive-img" alt="打算冰雪游、购买预制菜要如何“避坑” 江苏消保委给出春节消费提示">
                                         
                                         <span class="card-title">打算冰雪游、购买预制菜要如何“避坑” 江苏消保委给出春节消费提示</span>
                                     </div>
@@ -806,8 +970,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                                        <span class="chip bg-color">短视频</span>
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
                                     </a>
                                     
                                 </div>
@@ -815,14 +979,14 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-jsgd-003/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_lzxw.png" class="responsive-img" alt="2023年最高检交办江苏检察机关76件重点信访案件 化解率100%">
+                                        <img src="/images/wztx/lzxw.png" class="responsive-img" alt="全省法院审结电信诈骗1956件案件 涉案金额近70亿元">
                                         
-                                        <span class="card-title">2023年最高检交办江苏检察机关76件重点信访案件 化解率100%</span>
+                                        <span class="card-title">全省法院审结电信诈骗1956件案件 涉案金额近70亿元</span>
                                     </div>
                                 </a>
                                 <div class="card-content article-content">
@@ -845,8 +1009,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                                        <span class="chip bg-color">短视频</span>
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
                                     </a>
                                     
                                 </div>
@@ -854,12 +1018,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-jsgd-006/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_lzxw.png" class="responsive-img" alt="星巴克联名“大闹天宫” 推出流冻拿铁 “猴哥”开始送外卖">
+                                        <img src="/images/wztx/lzxw.png" class="responsive-img" alt="星巴克联名“大闹天宫” 推出流冻拿铁 “猴哥”开始送外卖">
                                         
                                         <span class="card-title">星巴克联名“大闹天宫” 推出流冻拿铁 “猴哥”开始送外卖</span>
                                     </div>
@@ -884,8 +1048,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                                        <span class="chip bg-color">短视频</span>
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
                                     </a>
                                     
                                 </div>
@@ -893,12 +1057,51 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/wztx-jsgd-002/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/wztx/lzxw.png" class="responsive-img" alt="2023年最高检交办江苏检察机关76件重点信访案件 化解率100%">
+                                        
+                                        <span class="card-title">2023年最高检交办江苏检察机关76件重点信访案件 化解率100%</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-18
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>江苏广电荔枝新闻
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/wztx-jsgd-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_lzxw.png" class="responsive-img" alt="2023年全省法院共审执结214.7万件案件 为劳动者追回“血汗钱”11.4亿元">
+                                        <img src="/images/wztx/lzxw.png" class="responsive-img" alt="2023年全省法院共审执结214.7万件案件 为劳动者追回“血汗钱”11.4亿元">
                                         
                                         <span class="card-title">2023年全省法院共审执结214.7万件案件 为劳动者追回“血汗钱”11.4亿元</span>
                                     </div>
@@ -923,203 +1126,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                                        <span class="chip bg-color">短视频</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/wztx-rmrb-001/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="以乐为媒 同奏凯歌 “音乐大思政课” 举办">
-                                        
-                                        <span class="card-title">以乐为媒 同奏凯歌 “音乐大思政课” 举办</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                                        <span class="chip bg-color">人民日报</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/wztx-rmrb-003/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="“和美边疆·民族同歌——新疆西藏题材美术作品展”在京启幕">
-                                        
-                                        <span class="card-title">“和美边疆·民族同歌——新疆西藏题材美术作品展”在京启幕</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                                        <span class="chip bg-color">人民日报</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/wztx-rmrb-004/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="首师大原创话剧《敬修先生》上演 探索“以戏育人”新路径">
-                                        
-                                        <span class="card-title">首师大原创话剧《敬修先生》上演 探索“以戏育人”新路径</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                                        <span class="chip bg-color">人民日报</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/wztx-rmrb-007/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="涅瓦河畔的遐思——列宾艺术特展”在京开展 92件珍品亮相国博">
-                                        
-                                        <span class="card-title">涅瓦河畔的遐思——列宾艺术特展”在京开展 92件珍品亮相国博</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                                        <span class="chip bg-color">人民日报</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/wztx-rmrb-009/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/wztx_rmrb.png" class="responsive-img" alt="群众主体、群众主创、群众主享：宁陕“村光大道”促进农文旅融合发展">
-                                        
-                                        <span class="card-title">群众主体、群众主创、群众主享：宁陕“村光大道”促进农文旅融合发展</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5/">
-                                        <span class="chip bg-color">人民日报</span>
+                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
+                                        <span class="chip bg-color">文字通讯</span>
                                     </a>
                                     
                                 </div>
@@ -1129,6 +1137,14 @@
                     
                     </div>
                 </article>
+                
+                <div class="portfolio-section__footer">
+                    <button class="btn-show-more" onclick="toggleMoreWorks(this, 'portfolio-文字通讯')">
+                        <span class="show-text">查看更多</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                
             </section>
         
             
@@ -1142,12 +1158,51 @@
                 <article class="articles portfolio-grid">
                     <div class="row article-row">
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
-                                <a href="/works/tgsd-ycxw-001/">
+                                <a href="/works/tgsd-ysxw-002/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/tgsd_ysxw-01.png" class="responsive-img" alt="今天的菜市场，不止有菜">
+                                        <img src="/images/tgsd/ysxw-02.png" class="responsive-img" alt="“即买即退”，境外游客爱买什么？退税体验如何？">
+                                        
+                                        <span class="card-title">“即买即退”，境外游客爱买什么？退税体验如何？</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-05-24
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“央视新闻”“新闻联播”公众号
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E7%89%B9%E7%A8%BF-%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">特稿/深度报道</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/tgsd-ysxw-001/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/tgsd/ysxw-01.png" class="responsive-img" alt="今天的菜市场，不止有菜">
                                         
                                         <span class="card-title">今天的菜市场，不止有菜</span>
                                     </div>
@@ -1164,7 +1219,7 @@
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“央视新闻”和“新闻联播”微信公众号
+                                            <i class="fas fa-bullhorn fa-fw"></i>“央视新闻”“新闻联播”公众号
                                         </span>
                                         
                                     </div>
@@ -1172,8 +1227,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
-                                        <span class="chip bg-color">深度报道</span>
+                                    <a href="/tags/%E7%89%B9%E7%A8%BF-%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">特稿/深度报道</span>
                                     </a>
                                     
                                 </div>
@@ -1181,12 +1236,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/tgsd-qt-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/tgsd_qt-01.png" class="responsive-img" alt="助浴、陪诊、宠托、改娃，这些90后为什么选择职业新赛道？">
+                                        <img src="/images/tgsd/qt-01.png" class="responsive-img" alt="助浴、陪诊、宠托、改娃，这些90后为什么选择职业新赛道？">
                                         
                                         <span class="card-title">助浴、陪诊、宠托、改娃，这些90后为什么选择职业新赛道？</span>
                                     </div>
@@ -1211,8 +1266,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
-                                        <span class="chip bg-color">深度报道</span>
+                                    <a href="/tags/%E7%89%B9%E7%A8%BF-%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">特稿/深度报道</span>
                                     </a>
                                     
                                 </div>
@@ -1220,51 +1275,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/tgsd-jsgd-002/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/tgsd_jsgd-01.png" class="responsive-img" alt="时间的答案 代际的样本：10个90后的10年">
-                                        
-                                        <span class="card-title">时间的答案 代际的样本：10个90后的10年</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-02-07
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>江苏广电荔枝新闻
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
-                                        <span class="chip bg-color">深度报道</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/tgsd-jsgd-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/tgsd_jsgd-01.png" class="responsive-img" alt="周亚：8年“北漂”遭遇公司裁员">
+                                        <img src="/images/tgsd/jsgd-01.png" class="responsive-img" alt="周亚：8年“北漂”遭遇公司裁员">
                                         
                                         <span class="card-title">周亚：8年“北漂”遭遇公司裁员</span>
                                     </div>
@@ -1289,8 +1305,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
-                                        <span class="chip bg-color">深度报道</span>
+                                    <a href="/tags/%E7%89%B9%E7%A8%BF-%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">特稿/深度报道</span>
                                     </a>
                                     
                                 </div>
@@ -1298,14 +1314,14 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
-                                <a href="/works/tgsd-qt-002/">
+                                <a href="/works/tgsd-jsgd-002/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/tgsd_qt-02.png" class="responsive-img" alt="留学“战”疫">
+                                        <img src="/images/tgsd/jsgd-01.png" class="responsive-img" alt="时间的答案 代际的样本：10个90后的10年">
                                         
-                                        <span class="card-title">留学“战”疫</span>
+                                        <span class="card-title">时间的答案 代际的样本：10个90后的10年</span>
                                     </div>
                                 </a>
                                 <div class="card-content article-content">
@@ -1316,11 +1332,11 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-02-07
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
+                                            <i class="fas fa-bullhorn fa-fw"></i>江苏广电荔枝新闻
                                         </span>
                                         
                                     </div>
@@ -1328,8 +1344,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
-                                        <span class="chip bg-color">深度报道</span>
+                                    <a href="/tags/%E7%89%B9%E7%A8%BF-%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">特稿/深度报道</span>
                                     </a>
                                     
                                 </div>
@@ -1337,12 +1353,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/tgsd-qt-003/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/tgsd_qt-03.png" class="responsive-img" alt="器官捐献的背后：生死摆渡间">
+                                        <img src="/images/tgsd/qt-03.png" class="responsive-img" alt="器官捐献的背后：生死摆渡间">
                                         
                                         <span class="card-title">器官捐献的背后：生死摆渡间</span>
                                     </div>
@@ -1355,7 +1371,7 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2020-11-25
                                         </span>
                                         
                                         <span class="publish-author">
@@ -1367,8 +1383,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
-                                        <span class="chip bg-color">深度报道</span>
+                                    <a href="/tags/%E7%89%B9%E7%A8%BF-%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">特稿/深度报道</span>
                                     </a>
                                     
                                 </div>
@@ -1376,14 +1392,14 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
-                                <a href="/works/tgsd-ycxw-002/">
+                                <a href="/works/tgsd-qt-002/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/tgsd_ysxw-02.png" class="responsive-img" alt="“即买即退”，境外游客爱买什么？退税体验如何？">
+                                        <img src="/images/tgsd/qt-02.png" class="responsive-img" alt="留学“战”疫">
                                         
-                                        <span class="card-title">“即买即退”，境外游客爱买什么？退税体验如何？</span>
+                                        <span class="card-title">留学“战”疫</span>
                                     </div>
                                 </a>
                                 <div class="card-content article-content">
@@ -1394,11 +1410,11 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2020-05-13
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“央视新闻”和“新闻联播”微信公众号
+                                            <i class="fas fa-bullhorn fa-fw"></i>其他
                                         </span>
                                         
                                     </div>
@@ -1406,8 +1422,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
-                                        <span class="chip bg-color">深度报道</span>
+                                    <a href="/tags/%E7%89%B9%E7%A8%BF-%E6%B7%B1%E5%BA%A6%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">特稿/深度报道</span>
                                     </a>
                                     
                                 </div>
@@ -1417,6 +1433,14 @@
                     
                     </div>
                 </article>
+                
+                <div class="portfolio-section__footer">
+                    <button class="btn-show-more" onclick="toggleMoreWorks(this, 'portfolio-特稿-深度报道')">
+                        <span class="show-text">查看更多</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                
             </section>
         
             
@@ -1430,12 +1454,51 @@
                 <article class="articles portfolio-grid">
                     <div class="row article-row">
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/sjxw-ysxw-001/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/sjxw/ysxw.png" class="responsive-img" alt="“数”说高校专业调整，“未来风口”专业是哪些？">
+                                        
+                                        <span class="card-title">“数”说高校专业调整，“未来风口”专业是哪些？</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-05-11
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“央视新闻”“新闻联播”公众号
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%95%B0%E6%8D%AE%E6%96%B0%E9%97%BB/">
+                                        <span class="chip bg-color">数据新闻</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/sjxw-ppxw-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/sjxw_ppxw-01.png" class="responsive-img" alt="零工时代：大学生兼职调查">
+                                        <img src="/images/sjxw/ppxw-01.png" class="responsive-img" alt="零工时代：大学生兼职调查">
                                         
                                         <span class="card-title">零工时代：大学生兼职调查</span>
                                     </div>
@@ -1452,7 +1515,7 @@
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>澎湃新闻、新潮、虎嗅等
+                                            <i class="fas fa-bullhorn fa-fw"></i>澎湃新闻/新潮/虎嗅等
                                         </span>
                                         
                                     </div>
@@ -1469,12 +1532,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/sjxw-ppxw-003/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/sjxw_ppxw-03.png" class="responsive-img" alt="夺金后全国放假半天？小国奥运之路有多难">
+                                        <img src="/images/sjxw/ppxw-03.png" class="responsive-img" alt="夺金后全国放假半天？小国奥运之路有多难">
                                         
                                         <span class="card-title">夺金后全国放假半天？小国奥运之路有多难</span>
                                     </div>
@@ -1491,7 +1554,7 @@
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>澎湃新闻、新潮、虎嗅等
+                                            <i class="fas fa-bullhorn fa-fw"></i>澎湃新闻/新潮/虎嗅等
                                         </span>
                                         
                                     </div>
@@ -1508,12 +1571,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/sjxw-ppxw-002/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/sjxw_ppxw-02.png" class="responsive-img" alt="未成年犯罪嫌疑人的罪与罚">
+                                        <img src="/images/sjxw/ppxw-02.png" class="responsive-img" alt="未成年犯罪嫌疑人的罪与罚">
                                         
                                         <span class="card-title">未成年犯罪嫌疑人的罪与罚</span>
                                     </div>
@@ -1530,46 +1593,7 @@
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>澎湃新闻、新潮、虎嗅等
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%95%B0%E6%8D%AE%E6%96%B0%E9%97%BB/">
-                                        <span class="chip bg-color">数据新闻</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/sjxw-ycxw-001/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/sjxw_ysxw.png" class="responsive-img" alt="“数”说高校专业调整，“未来风口”专业是哪些？">
-                                        
-                                        <span class="card-title">“数”说高校专业调整，“未来风口”专业是哪些？</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“央视新闻”和“新闻联播”微信公众号
+                                            <i class="fas fa-bullhorn fa-fw"></i>澎湃新闻/新潮/虎嗅等
                                         </span>
                                         
                                     </div>
@@ -1588,6 +1612,14 @@
                     
                     </div>
                 </article>
+                
+                <div class="portfolio-section__footer">
+                    <button class="btn-show-more" onclick="toggleMoreWorks(this, 'portfolio-数据新闻')">
+                        <span class="show-text">查看更多</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                
             </section>
         
             
@@ -1601,12 +1633,12 @@
                 <article class="articles portfolio-grid">
                     <div class="row article-row">
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
-                                <a href="/works/jdbd-rmrb07-005/">
+                                <a href="/works/jdbd-rmrb-005/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/jdbd_rmrb-05.png" class="responsive-img" alt="不当使用“万能遥控器”或涉嫌违法">
+                                        <img src="/images/jdbd/rmrb-05.png" class="responsive-img" alt="不当使用“万能遥控器”或涉嫌违法">
                                         
                                         <span class="card-title">不当使用“万能遥控器”或涉嫌违法</span>
                                     </div>
@@ -1623,7 +1655,7 @@
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
+                                            <i class="fas fa-bullhorn fa-fw"></i>《人民日报》07版
                                         </span>
                                         
                                     </div>
@@ -1640,14 +1672,14 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
-                                <a href="/works/jdbd-rmrb07-004/">
+                                <a href="/works/jdbd-rmrb-004/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/jdbd_rmrb-04.png" class="responsive-img" alt="设备、套餐涉及虚假宣传、消费陷阱—— 便携式上网产品套路多">
+                                        <img src="/images/jdbd/rmrb-04.png" class="responsive-img" alt="设备、套餐涉及虚假宣传、消费陷阱—— 便携式上网产品套路多">
                                         
-                                        <span class="card-title">设备、套餐涉及虚假宣传、消费陷阱—— 便携式上网产品套路多</span>
+                                        <span class="card-title">设备、套餐涉及虚假宣传、消费陷阱—— 便携式上网产品套路多</span>
                                     </div>
                                 </a>
                                 <div class="card-content article-content">
@@ -1662,7 +1694,7 @@
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
+                                            <i class="fas fa-bullhorn fa-fw"></i>《人民日报》07版
                                         </span>
                                         
                                     </div>
@@ -1679,12 +1711,51 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
-                                <a href="/works/jdbd-rmrb07-002/">
+                                <a href="/works/jdbd-rmrb-003/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/jdbd_rmrb-02.png" class="responsive-img" alt="谁破解了孩子的未成年人模式">
+                                        <img src="/images/jdbd/rmrb-03.png" class="responsive-img" alt="爱心座位形同虚设？明确规则是关键">
+                                        
+                                        <span class="card-title">爱心座位形同虚设？明确规则是关键</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-08-11
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>《人民日报》07版
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E7%9B%91%E7%9D%A3%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">监督报道</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/jdbd-rmrb-002/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/jdbd/rmrb-02.png" class="responsive-img" alt="谁破解了孩子的未成年人模式">
                                         
                                         <span class="card-title">谁破解了孩子的未成年人模式</span>
                                     </div>
@@ -1701,7 +1772,7 @@
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
+                                            <i class="fas fa-bullhorn fa-fw"></i>《人民日报》07版
                                         </span>
                                         
                                     </div>
@@ -1718,51 +1789,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
-                                <a href="/works/jdbd-rmrb07-003/">
+                                <a href="/works/jdbd-rmrb-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/jdbd_rmrb-03.png" class="responsive-img" alt="爱心座位形同虚设？明确规则是关键">
-                                        
-                                        <span class="card-title">爱心座位形同虚设？明确规则是关键</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-07-10
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E7%9B%91%E7%9D%A3%E6%8A%A5%E9%81%93/">
-                                        <span class="chip bg-color">监督报道</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/jdbd-rmrb07-001/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/jdbd_rmrb-01.png" class="responsive-img" alt="小区违建治理咋这么难">
+                                        <img src="/images/jdbd/rmrb-01.png" class="responsive-img" alt="小区违建治理咋这么难">
                                         
                                         <span class="card-title">小区违建治理咋这么难</span>
                                     </div>
@@ -1775,11 +1807,11 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-07-10
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-06-30
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
+                                            <i class="fas fa-bullhorn fa-fw"></i>《人民日报》07版
                                         </span>
                                         
                                     </div>
@@ -1798,6 +1830,14 @@
                     
                     </div>
                 </article>
+                
+                <div class="portfolio-section__footer">
+                    <button class="btn-show-more" onclick="toggleMoreWorks(this, 'portfolio-监督报道')">
+                        <span class="show-text">查看更多</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                
             </section>
         
             
@@ -1806,17 +1846,134 @@
             <section id="portfolio-新闻评论" class="portfolio-section" data-aos="fade-up">
                 <div class="portfolio-section__header">
                     <h2 class="portfolio-section__title">新闻评论</h2>
-                    <span class="portfolio-section__count">共 15 篇</span>
+                    <span class="portfolio-section__count">共 17 篇</span>
                 </div>
                 <article class="articles portfolio-grid">
                     <div class="row article-row">
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-rmrb-002/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/rmrb.png" class="responsive-img" alt="文艺评论｜《江南·十二场欢聚》：文旅融合下的戏综新探索">
+                                        
+                                        <span class="card-title">文艺评论｜《江南·十二场欢聚》：文旅融合下的戏综新探索</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-09-05
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-rmrb-001/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/rmrb.png" class="responsive-img" alt="文艺评论｜用文化IP如何激活当地文旅文艺评论">
+                                        
+                                        <span class="card-title">文艺评论｜用文化IP如何激活当地文旅文艺评论</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-06-28
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>人民日报全国党媒信息公共平台
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-xwlb-005/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zbs-05.png" class="responsive-img" alt="主播说联播 | 铁规矩、硬杠杠！绝不止管五年十年">
+                                        
+                                        <span class="card-title">主播说联播 | 铁规矩、硬杠杠！绝不止管五年十年</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-02-26
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“新闻联播”微信公众号
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/xwpl-xwlb-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zbs-01.png" class="responsive-img" alt="主播说联播 | 把监督落在“食”处">
+                                        <img src="/images/xwpl/zbs-01.png" class="responsive-img" alt="主播说联播 | 把监督落在“食”处">
                                         
                                         <span class="card-title">主播说联播 | 把监督落在“食”处</span>
                                     </div>
@@ -1829,7 +1986,7 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-02-25
                                         </span>
                                         
                                         <span class="publish-author">
@@ -1841,8 +1998,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E6%96%87%E5%AD%97%E9%80%9A%E8%AE%AF/">
-                                        <span class="chip bg-color">文字通讯</span>
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
                                     </a>
                                     
                                 </div>
@@ -1850,12 +2007,480 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-xwlb-002/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zbs-02.png" class="responsive-img" alt="主播说联播 | 任凭国际风云变幻，中俄关系都将从容前行">
+                                        
+                                        <span class="card-title">主播说联播 | 任凭国际风云变幻，中俄关系都将从容前行</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-02-24
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“新闻联播”微信公众号
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-xwlb-004/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zbs-04.png" class="responsive-img" alt="主播说联播 | 重点整治AI技术滥用等乱象！靶向发力，目标清朗">
+                                        
+                                        <span class="card-title">主播说联播 | 重点整治AI技术滥用等乱象！靶向发力，目标清朗</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-02-21
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“新闻联播”微信公众号
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-xwlb-003/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zbs-03.png" class="responsive-img" alt="主播说联播 | 体育课不能“说起来重要，忙起来不要”">
+                                        
+                                        <span class="card-title">主播说联播 | 体育课不能“说起来重要，忙起来不要”</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2025-02-19
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“新闻联播”微信公众号
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-zjs-008/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/sppl-01.png" class="responsive-img" alt="视频评论｜今日谈|“聚光灯”外，每一份坚守都值得被尊重">
+                                        
+                                        <span class="card-title">视频评论｜今日谈|“聚光灯”外，每一份坚守都值得被尊重</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-11-15
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-zjs-003/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zjs.png" class="responsive-img" alt="今日谈｜理性消费从少交“幻想税”开始">
+                                        
+                                        <span class="card-title">今日谈｜理性消费从少交“幻想税”开始</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-11-08
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-zjs-004/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zjs.png" class="responsive-img" alt="今日谈｜又一起虐猫致死事件发生，我们为什么要呼唤伴侣动物保护">
+                                        
+                                        <span class="card-title">今日谈｜又一起虐猫致死事件发生，我们为什么要呼唤伴侣动物保护</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-11-05
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-zjs-002/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zjs.png" class="responsive-img" alt="今日谈｜AI牵手《山海经》 传统文化发新芽">
+                                        
+                                        <span class="card-title">今日谈｜AI牵手《山海经》 传统文化发新芽</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-10-18
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-zjs-007/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zjs.png" class="responsive-img" alt="今日谈｜女童被泼开水系“恶作剧”？相关部门不应轻率定性">
+                                        
+                                        <span class="card-title">今日谈｜女童被泼开水系“恶作剧”？相关部门不应轻率定性</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-10-16
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-zjs-006/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zjs.png" class="responsive-img" alt="今日谈｜直播“上链接” 普法新赛道">
+                                        
+                                        <span class="card-title">今日谈｜直播“上链接” 普法新赛道</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-10-14
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-zjs-005/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zjs.png" class="responsive-img" alt="今日谈｜守护文博热潮需警惕黄牛“钻空子”">
+                                        
+                                        <span class="card-title">今日谈｜守护文博热潮需警惕黄牛“钻空子”</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-10-12
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-zjs-001/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/zjs.png" class="responsive-img" alt="今日谈｜低俗婚闹是对女性权利和尊严的漠视">
+                                        
+                                        <span class="card-title">今日谈｜低俗婚闹是对女性权利和尊严的漠视</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-10-11
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/xwpl-zjs-009/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/xwpl/sppl-02.png" class="responsive-img" alt="视频评论｜从“失控”的家长群看“直升机父母”现象">
+                                        
+                                        <span class="card-title">视频评论｜从“失控”的家长群看“直升机父母”现象</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-09-15
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
+                                        <span class="chip bg-color">新闻评论</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 hidden-item" data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/xwpl-qt-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_qt.png" class="responsive-img" alt="监控视频频繁外流，我们该怎么办？">
+                                        <img src="/images/xwpl/qt.png" class="responsive-img" alt="监控视频频繁外流，我们该怎么办？">
                                         
                                         <span class="card-title">监控视频频繁外流，我们该怎么办？</span>
                                     </div>
@@ -1868,7 +2493,7 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-16
                                         </span>
                                         
                                         <span class="publish-author">
@@ -1889,515 +2514,16 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-xwlb-002/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zbs-02.png" class="responsive-img" alt="主播说联播 | 任凭国际风云变幻，中俄关系都将从容前行">
-                                        
-                                        <span class="card-title">主播说联播 | 任凭国际风云变幻，中俄关系都将从容前行</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“新闻联播”微信公众号
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-xwlb-004/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zbs-04.png" class="responsive-img" alt="主播说联播 | 重点整治AI技术滥用等乱象！靶向发力，目标清朗">
-                                        
-                                        <span class="card-title">主播说联播 | 重点整治AI技术滥用等乱象！靶向发力，目标清朗</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“新闻联播”微信公众号
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-xwlb-003/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zbs-03.png" class="responsive-img" alt="主播说联播 | 体育课不能“说起来重要，忙起来不要”">
-                                        
-                                        <span class="card-title">主播说联播 | 体育课不能“说起来重要，忙起来不要”</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“新闻联播”微信公众号
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-zjs-001/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zjs.png" class="responsive-img" alt="今日谈｜低俗婚闹是对女性权利和尊严的漠视">
-                                        
-                                        <span class="card-title">今日谈｜低俗婚闹是对女性权利和尊严的漠视</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-xwlb-005/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zbs-05.png" class="responsive-img" alt="主播说联播 | 铁规矩、硬杠杠！绝不止管五年十年">
-                                        
-                                        <span class="card-title">主播说联播 | 铁规矩、硬杠杠！绝不止管五年十年</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“新闻联播”微信公众号
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-zjs-002/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zjs.png" class="responsive-img" alt="今日谈｜AI牵手《山海经》 传统文化发新芽">
-                                        
-                                        <span class="card-title">今日谈｜AI牵手《山海经》 传统文化发新芽</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-zjs-003/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zjs.png" class="responsive-img" alt="今日谈｜理性消费从少交“幻想税”开始">
-                                        
-                                        <span class="card-title">今日谈｜理性消费从少交“幻想税”开始</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-zjs-004/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zjs.png" class="responsive-img" alt="今日谈｜又一起虐猫致死事件发生，我们为什么要呼唤伴侣动物保护">
-                                        
-                                        <span class="card-title">今日谈｜又一起虐猫致死事件发生，我们为什么要呼唤伴侣动物保护</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-zjs-005/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zjs.png" class="responsive-img" alt="今日谈｜守护文博热潮需警惕黄牛“钻空子”">
-                                        
-                                        <span class="card-title">今日谈｜守护文博热潮需警惕黄牛“钻空子”</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-zjs-006/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zjs.png" class="responsive-img" alt="今日谈｜直播“上链接” 普法新赛道">
-                                        
-                                        <span class="card-title">今日谈｜直播“上链接” 普法新赛道</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-zjs-007/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zjs.png" class="responsive-img" alt="今日谈｜女童被泼开水系“恶作剧”？相关部门不应轻率定性">
-                                        
-                                        <span class="card-title">今日谈｜女童被泼开水系“恶作剧”？相关部门不应轻率定性</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-zjs-008/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zjs.png" class="responsive-img" alt="视频评论｜今日谈|“聚光灯”外，每一份坚守都值得被尊重">
-                                        
-                                        <span class="card-title">视频评论｜今日谈|“聚光灯”外，每一份坚守都值得被尊重</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/xwpl-zjs-009/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/xwpl_zjs.png" class="responsive-img" alt="视频评论｜从“失控”的家长群看“直升机父母”现象">
-                                        
-                                        <span class="card-title">视频评论｜从“失控”的家长群看“直升机父母”现象</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>“紫金山新闻”APP
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E6%96%B0%E9%97%BB%E8%AF%84%E8%AE%BA/">
-                                        <span class="chip bg-color">新闻评论</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
                     </div>
                 </article>
+                
+                <div class="portfolio-section__footer">
+                    <button class="btn-show-more" onclick="toggleMoreWorks(this, 'portfolio-新闻评论')">
+                        <span class="show-text">查看更多</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                
             </section>
         
             
@@ -2411,14 +2537,14 @@
                 <article class="articles portfolio-grid">
                     <div class="row article-row">
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
-                                <a href="/works/kjbd-xdkb-001/">
+                                <a href="/works/kjbd-xdkb-002/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/kjbd_xdkb.png" class="responsive-img" alt="哈利·波特的隐形斗篷将成日常用品？南大教授揭秘隐身术？">
+                                        <img src="/images/kjbd/xdkb.png" class="responsive-img" alt="想象力不是人类专属？揭秘老鼠的“想象力世界”">
                                         
-                                        <span class="card-title">哈利·波特的隐形斗篷将成日常用品？南大教授揭秘隐身术？</span>
+                                        <span class="card-title">想象力不是人类专属？揭秘老鼠的“想象力世界”</span>
                                     </div>
                                 </a>
                                 <div class="card-content article-content">
@@ -2429,11 +2555,11 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2023-12-07
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
+                                            <i class="fas fa-bullhorn fa-fw"></i>《现代快报》及其矩阵
                                         </span>
                                         
                                     </div>
@@ -2450,14 +2576,14 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
-                                <a href="/works/kjbd-xdkb-002/">
+                                <a href="/works/kjbd-xdkb-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/kjbd_xdkb.png" class="responsive-img" alt="想象力不是人类专属？揭秘老鼠的“想象力世界”">
+                                        <img src="/images/kjbd/xdkb.png" class="responsive-img" alt="哈利·波特的隐形斗篷将成日常用品？南大教授揭秘隐身术？">
                                         
-                                        <span class="card-title">想象力不是人类专属？揭秘老鼠的“想象力世界”</span>
+                                        <span class="card-title">哈利·波特的隐形斗篷将成日常用品？南大教授揭秘隐身术？</span>
                                     </div>
                                 </a>
                                 <div class="card-content article-content">
@@ -2468,11 +2594,11 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2023-11-03
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
+                                            <i class="fas fa-bullhorn fa-fw"></i>《现代快报》及其矩阵
                                         </span>
                                         
                                     </div>
@@ -2491,6 +2617,140 @@
                     
                     </div>
                 </article>
+                
+            </section>
+        
+            
+            
+            
+            <section id="portfolio-出镜报道" class="portfolio-section" data-aos="fade-up">
+                <div class="portfolio-section__header">
+                    <h2 class="portfolio-section__title">出镜报道</h2>
+                    <span class="portfolio-section__count">共 3 篇</span>
+                </div>
+                <article class="articles portfolio-grid">
+                    <div class="row article-row">
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/cjbd-ldgc-002/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/cjbd/ldgc-02.png" class="responsive-img" alt="兰大观察｜运动会的台前幕后">
+                                        
+                                        <span class="card-title">兰大观察｜运动会的台前幕后</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2021-05-15
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“兰大观察”栏目
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E5%87%BA%E9%95%9C%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">出镜报道</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/cjbd-ldgc-001/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/cjbd/ldgc-01.png" class="responsive-img" alt="兰大观察｜正在优化中的校园摆渡车">
+                                        
+                                        <span class="card-title">兰大观察｜正在优化中的校园摆渡车</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2020-12-19
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“兰大观察”栏目
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E5%87%BA%E9%95%9C%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">出镜报道</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/cjbd-ldgc-003/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/cjbd/ldgc-03.png" class="responsive-img" alt="兰大观察｜初赛进行时，文汇抢先看">
+                                        
+                                        <span class="card-title">兰大观察｜初赛进行时，文汇抢先看</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2020-11-12
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“兰大观察”栏目
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E5%87%BA%E9%95%9C%E6%8A%A5%E9%81%93/">
+                                        <span class="chip bg-color">出镜报道</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                    </div>
+                </article>
+                
             </section>
         
             
@@ -2504,51 +2764,12 @@
                 <article class="articles portfolio-grid">
                     <div class="row article-row">
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
-                            <div class="card">
-                                <a href="/works/dspx-lzxw-001/">
-                                    <div class="card-image">
-                                        
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/dsp_lzxw-01.png" class="responsive-img" alt="成都春熙路一特产店疑似售卖成分不明风干肉事件">
-                                        
-                                        <span class="card-title">成都春熙路一特产店疑似售卖成分不明风干肉事件</span>
-                                    </div>
-                                </a>
-                                <div class="card-content article-content">
-                                    <div class="summary block-with-text">
-                                        
-                                            点击下方原文链接查看作品详情。
-                                        
-                                    </div>
-                                    <div class="publish-info">
-                                        <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
-                                        </span>
-                                        
-                                        <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="card-action article-tags">
-                                    
-                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                                        <span class="chip bg-color">短视频</span>
-                                    </a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/dspx-lzxw-003/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/dsp_lzxw-03.png" class="responsive-img" alt="好友回应哺乳期宝妈因流感去世">
+                                        <img src="/images/dsp/lzxw-03.png" class="responsive-img" alt="好友回应哺乳期宝妈因流感去世">
                                         
                                         <span class="card-title">好友回应哺乳期宝妈因流感去世</span>
                                     </div>
@@ -2561,11 +2782,11 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-30
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
+                                            <i class="fas fa-bullhorn fa-fw"></i>“荔枝新闻”抖音、微博
                                         </span>
                                         
                                     </div>
@@ -2573,8 +2794,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                                        <span class="chip bg-color">短视频</span>
+                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91%E6%96%B0%E9%97%BB/">
+                                        <span class="chip bg-color">短视频新闻</span>
                                     </a>
                                     
                                 </div>
@@ -2582,12 +2803,12 @@
                             </div>
                         </div>
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/dspx-lzxw-002/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/dsp_lzxw-02.png" class="responsive-img" alt="官方回应佛山猫咪疑被成箱装载运输：正调查">
+                                        <img src="/images/dsp/lzxw-02.png" class="responsive-img" alt="官方回应佛山猫咪疑被成箱装载运输：正调查">
                                         
                                         <span class="card-title">官方回应佛山猫咪疑被成箱装载运输：正调查</span>
                                     </div>
@@ -2600,11 +2821,11 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-17
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
+                                            <i class="fas fa-bullhorn fa-fw"></i>“荔枝新闻”抖音、微博
                                         </span>
                                         
                                     </div>
@@ -2612,8 +2833,47 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/">
-                                        <span class="chip bg-color">短视频</span>
+                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91%E6%96%B0%E9%97%BB/">
+                                        <span class="chip bg-color">短视频新闻</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/dspx-lzxw-001/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/dsp/lzxw-01.png" class="responsive-img" alt="成都春熙路一特产店疑似售卖成分不明风干肉事件">
+                                        
+                                        <span class="card-title">成都春熙路一特产店疑似售卖成分不明风干肉事件</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-15
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“荔枝新闻”抖音、微博
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91%E6%96%B0%E9%97%BB/">
+                                        <span class="chip bg-color">短视频新闻</span>
                                     </a>
                                     
                                 </div>
@@ -2623,6 +2883,101 @@
                     
                     </div>
                 </article>
+                
+            </section>
+        
+            
+            
+            
+            <section id="portfolio-人物宣传" class="portfolio-section" data-aos="fade-up">
+                <div class="portfolio-section__header">
+                    <h2 class="portfolio-section__title">人物宣传</h2>
+                    <span class="portfolio-section__count">共 2 篇</span>
+                </div>
+                <article class="articles portfolio-grid">
+                    <div class="row article-row">
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/rwxc-nju-002/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/rwxc/rw-01.png" class="responsive-img" alt="创新视点|孙永健：淬炼社会学的“想象力”">
+                                        
+                                        <span class="card-title">创新视点|孙永健：淬炼社会学的“想象力”</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-08-01
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“南京大学研究生教育”微信公众号
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E4%BA%BA%E7%89%A9%E5%AE%A3%E4%BC%A0/">
+                                        <span class="chip bg-color">人物宣传</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
+                            <div class="card">
+                                <a href="/works/rwxc-nju-001/">
+                                    <div class="card-image">
+                                        
+                                        <img src="/images/rwxc/rw-01.png" class="responsive-img" alt="创新视点|周大蔚：增量学习 模型不遗忘">
+                                        
+                                        <span class="card-title">创新视点|周大蔚：增量学习 模型不遗忘</span>
+                                    </div>
+                                </a>
+                                <div class="card-content article-content">
+                                    <div class="summary block-with-text">
+                                        
+                                            点击下方原文链接查看作品详情。
+                                        
+                                    </div>
+                                    <div class="publish-info">
+                                        <span class="publish-date">
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-04-30
+                                        </span>
+                                        
+                                        <span class="publish-author">
+                                            <i class="fas fa-bullhorn fa-fw"></i>“南京大学研究生教育”微信公众号
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-action article-tags">
+                                    
+                                    <a href="/tags/%E4%BA%BA%E7%89%A9%E5%AE%A3%E4%BC%A0/">
+                                        <span class="chip bg-color">人物宣传</span>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                    </div>
+                </article>
+                
             </section>
         
             
@@ -2636,12 +2991,12 @@
                 <article class="articles portfolio-grid">
                     <div class="row article-row">
                     
-                        <div class="article col s12 m6 l4" data-aos="zoom-in">
+                        <div class="article col s12 m6 l4 " data-aos="zoom-in">
                             <div class="card">
                                 <a href="/works/spjj-default-001/">
                                     <div class="card-image">
                                         
-                                        <img src="https://gitee.com/xhliu911/imagebed/raw/master/img/spjj_01.png" class="responsive-img" alt="这个约定李斯丹妮坚持了10年">
+                                        <img src="/images/spjj/01.png" class="responsive-img" alt="这个约定李斯丹妮坚持了10年">
                                         
                                         <span class="card-title">这个约定李斯丹妮坚持了10年</span>
                                     </div>
@@ -2654,11 +3009,11 @@
                                     </div>
                                     <div class="publish-info">
                                         <span class="publish-date">
-                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-01-01
+                                            <i class="far fa-calendar-alt fa-fw icon-date"></i>2024-02-05
                                         </span>
                                         
                                         <span class="publish-author">
-                                            <i class="fas fa-bullhorn fa-fw"></i>其他
+                                            <i class="fas fa-bullhorn fa-fw"></i>视频剪辑
                                         </span>
                                         
                                     </div>
@@ -2666,8 +3021,8 @@
                                 
                                 <div class="card-action article-tags">
                                     
-                                    <a href="/tags/%E8%A7%86%E9%A2%91/">
-                                        <span class="chip bg-color">视频</span>
+                                    <a href="/tags/%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91/">
+                                        <span class="chip bg-color">视频剪辑</span>
                                     </a>
                                     
                                 </div>
@@ -2677,10 +3032,35 @@
                     
                     </div>
                 </article>
+                
             </section>
         
     </div>
 </main>
+
+<script>
+function toggleMoreWorks(button, sectionId) {
+    const section = document.getElementById(sectionId);
+    const hiddenItems = section.querySelectorAll('.article.hidden-item');
+    const isExpanded = button.classList.contains('expanded');
+
+    if (isExpanded) {
+        // 收起
+        hiddenItems.forEach(item => {
+            item.style.display = 'none';
+        });
+        button.classList.remove('expanded');
+        button.querySelector('.show-text').textContent = '查看更多';
+    } else {
+        // 展开
+        hiddenItems.forEach(item => {
+            item.style.display = 'block';
+        });
+        button.classList.add('expanded');
+        button.querySelector('.show-text').textContent = '收起';
+    }
+}
+</script>
 
 
     <footer class="page-footer bg-color">
@@ -2708,6 +3088,11 @@
             <!-- 运行天数提醒. -->
             
             <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025219138号-1</a>
+            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link ">
